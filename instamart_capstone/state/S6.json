@@ -1,0 +1,60 @@
+{
+ "scenario_id": "S6",
+ "history": [
+  {
+   "tool": "lookup_order",
+   "args": {
+    "order_id": "ORD-999999"
+   },
+   "obs": {
+    "found": false
+   }
+  },
+  {
+   "tool": "escalate_to_human",
+   "args": {
+    "reason": "None of the order IDs could be found"
+   },
+   "obs": {
+    "escalated": true
+   }
+  }
+ ],
+ "steps": [
+  {
+   "step": 1,
+   "type": "tool",
+   "tool": "lookup_order",
+   "args": {
+    "order_id": "ORD-999999"
+   },
+   "observation": {
+    "found": false
+   },
+   "tokens": 107
+  },
+  {
+   "step": 2,
+   "type": "tool",
+   "tool": "escalate_to_human",
+   "args": {
+    "reason": "None of the order IDs could be found"
+   },
+   "observation": {
+    "escalated": true
+   },
+   "tokens": 127
+  },
+  {
+   "step": 3,
+   "type": "final",
+   "status": "ESCALATED",
+   "answer": "I have passed your case to a human agent who will contact you.",
+   "tokens": 143
+  }
+ ],
+ "llm_calls": 3,
+ "tokens_used": 377,
+ "clock": 0.5,
+ "complete": true
+}

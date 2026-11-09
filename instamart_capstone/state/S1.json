@@ -1,0 +1,130 @@
+{
+ "scenario_id": "S1",
+ "history": [
+  {
+   "tool": "lookup_order",
+   "args": {
+    "order_id": "ORD-100048"
+   },
+   "obs": {
+    "found": true,
+    "status": "completed",
+    "delivery_minutes": 65.0,
+    "order_amount": 128.25
+   }
+  },
+  {
+   "tool": "check_policy",
+   "args": {
+    "query": "refund eligibility late delivery approval limit"
+   },
+   "obs": {
+    "sources": [
+     "refund_policy.txt"
+    ],
+    "late_minutes": 45,
+    "auto_limit": 1000
+   }
+  },
+  {
+   "tool": "compute_refund",
+   "args": {
+    "status": "completed",
+    "delivery_minutes": 65.0,
+    "order_amount": 128.25
+   },
+   "obs": {
+    "eligible": true,
+    "amount": 128.25,
+    "needs_approval": false,
+    "reason": "delivered in 65 min (> 45)"
+   }
+  },
+  {
+   "tool": "issue_refund",
+   "args": {
+    "order_id": "ORD-100048",
+    "amount": 128.25
+   },
+   "obs": {
+    "issued": true,
+    "amount": 128.25
+   }
+  }
+ ],
+ "steps": [
+  {
+   "step": 1,
+   "type": "tool",
+   "tool": "lookup_order",
+   "args": {
+    "order_id": "ORD-100048"
+   },
+   "observation": {
+    "found": true,
+    "status": "completed",
+    "delivery_minutes": 65.0,
+    "order_amount": 128.25
+   },
+   "tokens": 109
+  },
+  {
+   "step": 2,
+   "type": "tool",
+   "tool": "check_policy",
+   "args": {
+    "query": "refund eligibility late delivery approval limit"
+   },
+   "observation": {
+    "sources": [
+     "refund_policy.txt"
+    ],
+    "late_minutes": 45,
+    "auto_limit": 1000
+   },
+   "tokens": 147
+  },
+  {
+   "step": 3,
+   "type": "tool",
+   "tool": "compute_refund",
+   "args": {
+    "status": "completed",
+    "delivery_minutes": 65.0,
+    "order_amount": 128.25
+   },
+   "observation": {
+    "eligible": true,
+    "amount": 128.25,
+    "needs_approval": false,
+    "reason": "delivered in 65 min (> 45)"
+   },
+   "tokens": 178
+  },
+  {
+   "step": 4,
+   "type": "tool",
+   "tool": "issue_refund",
+   "args": {
+    "order_id": "ORD-100048",
+    "amount": 128.25
+   },
+   "observation": {
+    "issued": true,
+    "amount": 128.25
+   },
+   "tokens": 204
+  },
+  {
+   "step": 5,
+   "type": "final",
+   "status": "REFUND_ISSUED",
+   "answer": "Your refund of INR 128.25 has been issued to the original payment method.",
+   "tokens": 230
+  }
+ ],
+ "llm_calls": 5,
+ "tokens_used": 868,
+ "clock": 1.2,
+ "complete": true
+}

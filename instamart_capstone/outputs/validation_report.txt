@@ -1,0 +1,10 @@
+customer rows            pandas=1200  sql=1200  PASS
+order rows               pandas=12309  sql=12309  PASS
+ticket rows              pandas=164  sql=164  PASS
+distinct cities          pandas=6  sql=6  PASS
+completed orders         pandas=11110  sql=11110  PASS
+pending orders           pandas=0  sql=0  PASS
+sum completed amount     pandas=2998668.8  sql=2998668.8  PASS
+duplicate order_ids      pandas=0  sql=0  PASS
+unknown gender           pandas=30  sql=30  PASS
+avg completed delivery   pandas=27.374  sql=27.374  PASS

@@ -1,0 +1,96 @@
+test_crash_and_resume_runs_exactly_four_tools (test_agent.AgentTests.test_crash_and_resume_runs_exactly_four_tools) ... ok
+test_empty_request_rejected_without_tools (test_agent.AgentTests.test_empty_request_rejected_without_tools) ... ok
+test_refund_never_issued_twice_after_resume (test_agent.AgentTests.test_refund_never_issued_twice_after_resume) ... ok
+test_s7_hits_iteration_cap_under_default_token_limit (test_agent.AgentTests.test_s7_hits_iteration_cap_under_default_token_limit) ... ok
+test_seven_scenarios_match_expected_outcome_and_amount (test_agent.AgentTests.test_seven_scenarios_match_expected_outcome_and_amount) ... ok
+test_token_limit_and_timeout_fallbacks (test_agent.AgentTests.test_token_limit_and_timeout_fallbacks) ... ok
+test_zero_overlap_run_fails_at_least_one_question (test_agent.AgentTests.test_zero_overlap_run_fails_at_least_one_question) ... ok
+test_tc012_complete_pipeline_outputs_exist (test_project.Integration.test_tc012_complete_pipeline_outputs_exist)
+TC012 Run complete pipeline -> all expected outputs generated ... ok
+test_city_and_age_cleaning (test_project.PartA.test_city_and_age_cleaning)
+Cities map to 6 canonical names; impossible ages (-4, 0, 150, 999) are replaced ... ok
+test_pandas_matches_sql (test_project.PartA.test_pandas_matches_sql)
+SQLite validation: every Pandas-vs-SQL check passes ... ok
+test_tc001_import_customer_csv (test_project.PartA.test_tc001_import_customer_csv)
+TC001 Import customer CSV -> loads successfully ... ok
+test_tc002_duplicate_order_records_identified (test_project.PartA.test_tc002_duplicate_order_records_identified)
+TC002 Duplicate order records -> identified (and removed) ... ok
+test_tc003_invalid_gender_standardised_to_unknown (test_project.PartA.test_tc003_invalid_gender_standardised_to_unknown)
+TC003 Invalid gender value -> Unknown ... ok
+test_tc004_missing_customer_id_handled (test_project.PartA.test_tc004_missing_customer_id_handled)
+TC004 Missing customer ID -> row dropped by the documented cleaning rule ... ok
+test_kmeans_k2_to_k8_recorded (test_project.PartB.test_kmeans_k2_to_k8_recorded)
+K-Means K=2..8: inertia + silhouette recorded, inertia falls as K grows, best K = max silhouette ... ok
+test_retention_list_outputs (test_project.PartB.test_retention_list_outputs)
+Retention list + model files exist and are ranked by lapse probability ... ok
+test_rfm_calculation (test_project.PartB.test_rfm_calculation)
+RFM: recency/frequency/monetary come only from COMPLETED orders ... ok
+test_tc005_customer_with_no_recent_orders_is_at_risk (test_project.PartB.test_tc005_customer_with_no_recent_orders_is_at_risk)
+TC005 Customer with no recent orders -> assigned to an at-risk segment ... ok
+test_all_six_categories_reachable (test_project.PartC.test_all_six_categories_reachable)
+Every category of the brief can be produced ... ok
+test_dataset_guardrails_and_accuracy (test_project.PartC.test_dataset_guardrails_and_accuracy)
+Full dataset: blocked tickets never reach the model, zero PII leaks, triage accuracy >= 95% ... ok
+test_email_and_order_id_masked (test_project.PartC.test_email_and_order_id_masked)
+PII masking: email and order ID are masked, in any case ... ok
+test_no_pii_reaches_any_prompt (test_project.PartC.test_no_pii_reaches_any_prompt)
+No sensitive information leaks into zero-shot or few-shot prompts ... ok
+test_none_ticket_is_blocked (test_project.PartC.test_none_ticket_is_blocked)
+Negative: None as ticket text is treated as empty ... ok
+test_tc006_empty_ticket_skips_llm (test_project.PartC.test_tc006_empty_ticket_skips_llm)
+TC006 Empty support ticket -> LLM call skipped ... ok
+test_tc007_whitespace_ticket_skips_llm (test_project.PartC.test_tc007_whitespace_ticket_skips_llm)
+TC007 Whitespace-only ticket -> LLM call skipped ... ok
+test_tc008_oversized_ticket_blocked (test_project.PartC.test_tc008_oversized_ticket_blocked)
+TC008 Oversized ticket -> LLM call blocked ... ok
+test_tc009_phone_number_masked (test_project.PartC.test_tc009_phone_number_masked)
+TC009 Ticket containing phone number -> masked ... ok
+test_token_limit_boundary (test_project.PartC.test_token_limit_boundary)
+Boundary: exactly MAX_TOKENS is allowed, one token over is blocked ... ok
+test_triage_json_for_brief_example (test_project.PartC.test_triage_json_for_brief_example)
+Triage returns the brief's JSON: Delivery Delay / Medium / Check delivery status ... ok
+test_chunking_strategies (test_project.PartD.test_chunking_strategies)
+Two chunking strategies produce non-empty chunks for every policy file ... ok
+test_copilot_blocks_bad_input (test_project.PartD.test_copilot_blocks_bad_input)
+Empty / oversized chat messages are blocked before any retrieval or model call ... ok
+test_damaged_product_goes_to_human_verification (test_project.PartD.test_damaged_product_goes_to_human_verification)
+Brief's example: damaged product -> empathetic reply, human verification, case logged ... ok
+test_escalation_summary_is_redacted (test_project.PartD.test_escalation_summary_is_redacted)
+Human hand-off summaries contain no PII ... ok
+test_fraud_is_escalated_high_priority (test_project.PartD.test_fraud_is_escalated_high_priority)
+Fraud ticket -> High priority, human security review ... ok
+test_greeting_is_not_escalated (test_project.PartD.test_greeting_is_not_escalated)
+Chat: 'hi' gets a greeting, no human case is opened ... ok
+test_greeting_plus_real_request_is_not_small_talk (test_project.PartD.test_greeting_plus_real_request_is_not_small_talk)
+Small talk is only detected when the WHOLE message is small talk; a request after a greeting is still handled ... ok
+test_policy_question_still_answered_from_policy (test_project.PartD.test_policy_question_still_answered_from_policy)
+Chat: a real question without an order ID is still answered from the policy ... ok
+test_rag_prompt_contains_no_pii (test_project.PartD.test_rag_prompt_contains_no_pii)
+RAG prompt built from a question with PII is clean ... ok
+test_real_support_requests_unchanged_after_smalltalk_check (test_project.PartD.test_real_support_requests_unchanged_after_smalltalk_check)
+Refund / fraud / damaged requests behave exactly as before the small-talk check was added ... ok
+test_refund_rules (test_project.PartD.test_refund_rules)
+Late completed order -> auto refund (<= INR 1000) or human approval (> INR 1000); on-time -> no refund ... ok
+test_retrieval_eval_set (test_project.PartD.test_retrieval_eval_set)
+policy_eval.csv: right document retrieved for every question ... ok
+test_smalltalk_common_variants (test_project.PartD.test_smalltalk_common_variants)
+Informal variants (hlo, good day, sup, ok thanks, thank u) are small talk too; no escalation ... ok
+test_smalltalk_gets_friendly_reply_and_no_escalation (test_project.PartD.test_smalltalk_gets_friendly_reply_and_no_escalation)
+Hi/Hello/Hey/Good morning/afternoon/evening/How are you?/Thanks/Thank you/Bye -> friendly reply, no human case ... ok
+test_smalltalk_never_touches_policy_retrieval (test_project.PartD.test_smalltalk_never_touches_policy_retrieval)
+Greetings and thanks skip policy retrieval and the RAG answer entirely ... ok
+test_smalltalk_reply_matches_the_intent (test_project.PartD.test_smalltalk_reply_matches_the_intent)
+Each kind of small talk gets an appropriate reply ... ok
+test_tc010_refund_policy_question_retrieves_refund_policy (test_project.PartD.test_tc010_refund_policy_question_retrieves_refund_policy)
+TC010 Refund policy question -> relevant policy retrieved ... ok
+test_tc011_unsupported_refund_requests (test_project.PartD.test_tc011_unsupported_refund_requests)
+TC011 Unsupported refund request -> rejected or escalated, never auto-approved ... ok
+test_unrelated_question_still_escalates (test_project.PartD.test_unrelated_question_still_escalates)
+Off-topic questions are NOT small talk: still 'no policy' -> human case, exactly as before ... ok
+test_vague_request_asks_for_order_id (test_project.PartD.test_vague_request_asks_for_order_id)
+Chat: vague complaint without an order ID -> asks for it instead of dumping policy text ... ok
+
+----------------------------------------------------------------------
+Ran 49 tests in 0.919s
+
+OK

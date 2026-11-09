@@ -1,0 +1,165 @@
+ticket_id,allowed,reason,tokens_approx,redacted_text
+T0024,True,ok,28,There is an unauthorized transaction on my card linked to order [ORDER_ID]. I did not place it. Call [PHONE].
+T0073,True,ok,22,The invoice for [ORDER_ID] shows a wrong amount. Call me on [PHONE] to correct the bill.
+T0095,True,ok,23,The payment page shows an error and the app freezes when I apply a coupon. Order [ORDER_ID].
+T0159,False,empty_or_whitespace,0,
+T0080,True,ok,26,"I was charged for order [ORDER_ID] that I never made, it looks like fraud on my account. Call [PHONE]."
+T0124,True,ok,26,"I was charged for order [ORDER_ID] that I never made, it looks like fraud on my account. Call [PHONE]."
+T0061,True,ok,24,"Extra money was deducted for order [ORDER_ID], please check the bill. Contact [EMAIL]"
+T0118,True,ok,24,"Delivery for [ORDER_ID] is very late, it was promised in 20 minutes. Write to [EMAIL]"
+T0037,True,ok,26,I was charged twice for order [ORDER_ID]. Please refund the extra payment. My email is [EMAIL]
+T0002,True,ok,22,The rider marked [ORDER_ID] as delivered but I never received the package. Call [PHONE].
+T0163,False,too_long,775,
+T0031,True,ok,23,The payment page shows an error and the app freezes when I apply a coupon. Order [ORDER_ID].
+T0047,True,ok,13,"I cannot login, the OTP never arrives on [PHONE]."
+T0063,True,ok,13,"I cannot login, the OTP never arrives on [PHONE]."
+T0121,True,ok,26,I was charged twice for order [ORDER_ID]. Please refund the extra payment. My email is [EMAIL]
+T0139,True,ok,30,The app crashes every time I open the cart. I tried to place [ORDER_ID] again and got an error. Email [EMAIL]
+T0115,True,ok,13,"I cannot login, the OTP never arrives on [PHONE]."
+T0123,True,ok,13,"I cannot login, the OTP never arrives on [PHONE]."
+T0116,True,ok,26,"I was charged for order [ORDER_ID] that I never made, it looks like fraud on my account. Call [PHONE]."
+T0136,True,ok,24,"Someone hacked my account and used my wallet balance. This is fraud, contact [EMAIL]"
+T0008,True,ok,28,There is an unauthorized transaction on my card linked to order [ORDER_ID]. I did not place it. Call [PHONE].
+T0102,True,ok,24,My order [ORDER_ID] has not arrived and the rider is not picking up calls. Please call [PHONE].
+T0072,True,ok,26,"I was charged for order [ORDER_ID] that I never made, it looks like fraud on my account. Call [PHONE]."
+T0101,True,ok,22,The invoice for [ORDER_ID] shows a wrong amount. Call me on [PHONE] to correct the bill.
+T0059,True,ok,13,"I cannot login, the OTP never arrives on [PHONE]."
+T0049,True,ok,22,The invoice for [ORDER_ID] shows a wrong amount. Call me on [PHONE] to correct the bill.
+T0153,True,ok,24,"Extra money was deducted for order [ORDER_ID], please check the bill. Contact [EMAIL]"
+T0050,True,ok,22,The rider marked [ORDER_ID] as delivered but I never received the package. Call [PHONE].
+T0147,True,ok,23,The payment page shows an error and the app freezes when I apply a coupon. Order [ORDER_ID].
+T0074,True,ok,22,The rider marked [ORDER_ID] as delivered but I never received the package. Call [PHONE].
+T0156,True,ok,28,There is an unauthorized transaction on my card linked to order [ORDER_ID]. I did not place it. Call [PHONE].
+T0145,True,ok,22,The invoice for [ORDER_ID] shows a wrong amount. Call me on [PHONE] to correct the bill.
+T0053,True,ok,26,I was charged twice for order [ORDER_ID]. Please refund the extra payment. My email is [EMAIL]
+T0134,True,ok,24,My order [ORDER_ID] has not arrived and the rider is not picking up calls. Please call [PHONE].
+T0039,True,ok,30,The app crashes every time I open the cart. I tried to place [ORDER_ID] again and got an error. Email [EMAIL]
+T0016,True,ok,26,"I was charged for order [ORDER_ID] that I never made, it looks like fraud on my account. Call [PHONE]."
+T0055,True,ok,30,The app crashes every time I open the cart. I tried to place [ORDER_ID] again and got an error. Email [EMAIL]
+T0130,True,ok,24,My order [ORDER_ID] has not arrived and the rider is not picking up calls. Please call [PHONE].
+T0099,True,ok,30,The app crashes every time I open the cart. I tried to place [ORDER_ID] again and got an error. Email [EMAIL]
+T0062,True,ok,22,The rider marked [ORDER_ID] as delivered but I never received the package. Call [PHONE].
+T0013,True,ok,26,I was charged twice for order [ORDER_ID]. Please refund the extra payment. My email is [EMAIL]
+T0137,True,ok,22,The invoice for [ORDER_ID] shows a wrong amount. Call me on [PHONE] to correct the bill.
+T0152,True,ok,26,"I was charged for order [ORDER_ID] that I never made, it looks like fraud on my account. Call [PHONE]."
+T0144,True,ok,26,"I was charged for order [ORDER_ID] that I never made, it looks like fraud on my account. Call [PHONE]."
+T0094,True,ok,24,My order [ORDER_ID] has not arrived and the rider is not picking up calls. Please call [PHONE].
+T0021,True,ok,24,"Extra money was deducted for order [ORDER_ID], please check the bill. Contact [EMAIL]"
+T0077,True,ok,24,"Extra money was deducted for order [ORDER_ID], please check the bill. Contact [EMAIL]"
+T0036,True,ok,26,"I was charged for order [ORDER_ID] that I never made, it looks like fraud on my account. Call [PHONE]."
+T0113,True,ok,24,"Extra money was deducted for order [ORDER_ID], please check the bill. Contact [EMAIL]"
+T0060,True,ok,28,There is an unauthorized transaction on my card linked to order [ORDER_ID]. I did not place it. Call [PHONE].
+T0043,True,ok,13,"I cannot login, the OTP never arrives on [PHONE]."
+T0048,True,ok,24,"Someone hacked my account and used my wallet balance. This is fraud, contact [EMAIL]"
+T0154,True,ok,24,My order [ORDER_ID] has not arrived and the rider is not picking up calls. Please call [PHONE].
+T0125,True,ok,24,"Extra money was deducted for order [ORDER_ID], please check the bill. Contact [EMAIL]"
+T0146,True,ok,24,"Delivery for [ORDER_ID] is very late, it was promised in 20 minutes. Write to [EMAIL]"
+T0107,True,ok,13,"I cannot login, the OTP never arrives on [PHONE]."
+T0011,True,ok,30,The app crashes every time I open the cart. I tried to place [ORDER_ID] again and got an error. Email [EMAIL]
+T0017,True,ok,22,The invoice for [ORDER_ID] shows a wrong amount. Call me on [PHONE] to correct the bill.
+T0111,True,ok,13,"I cannot login, the OTP never arrives on [PHONE]."
+T0041,True,ok,26,I was charged twice for order [ORDER_ID]. Please refund the extra payment. My email is [EMAIL]
+T0120,True,ok,28,There is an unauthorized transaction on my card linked to order [ORDER_ID]. I did not place it. Call [PHONE].
+T0122,True,ok,22,The rider marked [ORDER_ID] as delivered but I never received the package. Call [PHONE].
+T0001,True,ok,26,I was charged twice for order [ORDER_ID]. Please refund the extra payment. My email is [EMAIL]
+T0064,True,ok,28,There is an unauthorized transaction on my card linked to order [ORDER_ID]. I did not place it. Call [PHONE].
+T0092,True,ok,24,"Someone hacked my account and used my wallet balance. This is fraud, contact [EMAIL]"
+T0038,True,ok,22,The rider marked [ORDER_ID] as delivered but I never received the package. Call [PHONE].
+T0155,True,ok,30,The app crashes every time I open the cart. I tried to place [ORDER_ID] again and got an error. Email [EMAIL]
+T0104,True,ok,24,"Someone hacked my account and used my wallet balance. This is fraud, contact [EMAIL]"
+T0012,True,ok,26,"I was charged for order [ORDER_ID] that I never made, it looks like fraud on my account. Call [PHONE]."
+T0084,True,ok,28,There is an unauthorized transaction on my card linked to order [ORDER_ID]. I did not place it. Call [PHONE].
+T0051,True,ok,13,"I cannot login, the OTP never arrives on [PHONE]."
+T0143,True,ok,30,The app crashes every time I open the cart. I tried to place [ORDER_ID] again and got an error. Email [EMAIL]
+T0035,True,ok,23,The payment page shows an error and the app freezes when I apply a coupon. Order [ORDER_ID].
+T0028,True,ok,28,There is an unauthorized transaction on my card linked to order [ORDER_ID]. I did not place it. Call [PHONE].
+T0100,True,ok,28,There is an unauthorized transaction on my card linked to order [ORDER_ID]. I did not place it. Call [PHONE].
+T0022,True,ok,24,My order [ORDER_ID] has not arrived and the rider is not picking up calls. Please call [PHONE].
+T0082,True,ok,22,The rider marked [ORDER_ID] as delivered but I never received the package. Call [PHONE].
+T0127,True,ok,23,The payment page shows an error and the app freezes when I apply a coupon. Order [ORDER_ID].
+T0162,False,too_long,775,
+T0109,True,ok,26,I was charged twice for order [ORDER_ID]. Please refund the extra payment. My email is [EMAIL]
+T0046,True,ok,24,My order [ORDER_ID] has not arrived and the rider is not picking up calls. Please call [PHONE].
+T0081,True,ok,22,The invoice for [ORDER_ID] shows a wrong amount. Call me on [PHONE] to correct the bill.
+T0007,True,ok,13,"I cannot login, the OTP never arrives on [PHONE]."
+T0068,True,ok,26,"I was charged for order [ORDER_ID] that I never made, it looks like fraud on my account. Call [PHONE]."
+T0085,True,ok,22,The invoice for [ORDER_ID] shows a wrong amount. Call me on [PHONE] to correct the bill.
+T0075,True,ok,30,The app crashes every time I open the cart. I tried to place [ORDER_ID] again and got an error. Email [EMAIL]
+T0052,True,ok,28,There is an unauthorized transaction on my card linked to order [ORDER_ID]. I did not place it. Call [PHONE].
+T0066,True,ok,24,My order [ORDER_ID] has not arrived and the rider is not picking up calls. Please call [PHONE].
+T0151,True,ok,13,"I cannot login, the OTP never arrives on [PHONE]."
+T0131,True,ok,13,"I cannot login, the OTP never arrives on [PHONE]."
+T0006,True,ok,24,"Delivery for [ORDER_ID] is very late, it was promised in 20 minutes. Write to [EMAIL]"
+T0135,True,ok,23,The payment page shows an error and the app freezes when I apply a coupon. Order [ORDER_ID].
+T0079,True,ok,13,"I cannot login, the OTP never arrives on [PHONE]."
+T0040,True,ok,28,There is an unauthorized transaction on my card linked to order [ORDER_ID]. I did not place it. Call [PHONE].
+T0093,True,ok,22,The invoice for [ORDER_ID] shows a wrong amount. Call me on [PHONE] to correct the bill.
+T0089,True,ok,24,"Extra money was deducted for order [ORDER_ID], please check the bill. Contact [EMAIL]"
+T0034,True,ok,24,My order [ORDER_ID] has not arrived and the rider is not picking up calls. Please call [PHONE].
+T0033,True,ok,22,The invoice for [ORDER_ID] shows a wrong amount. Call me on [PHONE] to correct the bill.
+T0160,False,empty_or_whitespace,0,
+T0087,True,ok,30,The app crashes every time I open the cart. I tried to place [ORDER_ID] again and got an error. Email [EMAIL]
+T0009,True,ok,26,I was charged twice for order [ORDER_ID]. Please refund the extra payment. My email is [EMAIL]
+T0108,True,ok,26,"I was charged for order [ORDER_ID] that I never made, it looks like fraud on my account. Call [PHONE]."
+T0054,True,ok,24,"Delivery for [ORDER_ID] is very late, it was promised in 20 minutes. Write to [EMAIL]"
+T0025,True,ok,22,The invoice for [ORDER_ID] shows a wrong amount. Call me on [PHONE] to correct the bill.
+T0004,True,ok,28,There is an unauthorized transaction on my card linked to order [ORDER_ID]. I did not place it. Call [PHONE].
+T0148,True,ok,28,There is an unauthorized transaction on my card linked to order [ORDER_ID]. I did not place it. Call [PHONE].
+T0088,True,ok,24,"Someone hacked my account and used my wallet balance. This is fraud, contact [EMAIL]"
+T0030,True,ok,24,"Delivery for [ORDER_ID] is very late, it was promised in 20 minutes. Write to [EMAIL]"
+T0067,True,ok,13,"I cannot login, the OTP never arrives on [PHONE]."
+T0029,True,ok,22,The invoice for [ORDER_ID] shows a wrong amount. Call me on [PHONE] to correct the bill.
+T0129,True,ok,26,I was charged twice for order [ORDER_ID]. Please refund the extra payment. My email is [EMAIL]
+T0105,True,ok,24,"Extra money was deducted for order [ORDER_ID], please check the bill. Contact [EMAIL]"
+T0045,True,ok,22,The invoice for [ORDER_ID] shows a wrong amount. Call me on [PHONE] to correct the bill.
+T0069,True,ok,22,The invoice for [ORDER_ID] shows a wrong amount. Call me on [PHONE] to correct the bill.
+T0010,True,ok,24,"Delivery for [ORDER_ID] is very late, it was promised in 20 minutes. Write to [EMAIL]"
+T0023,True,ok,13,"I cannot login, the OTP never arrives on [PHONE]."
+T0106,True,ok,24,"Delivery for [ORDER_ID] is very late, it was promised in 20 minutes. Write to [EMAIL]"
+T0015,True,ok,23,The payment page shows an error and the app freezes when I apply a coupon. Order [ORDER_ID].
+T0091,True,ok,30,The app crashes every time I open the cart. I tried to place [ORDER_ID] again and got an error. Email [EMAIL]
+T0126,True,ok,22,The rider marked [ORDER_ID] as delivered but I never received the package. Call [PHONE].
+T0096,True,ok,28,There is an unauthorized transaction on my card linked to order [ORDER_ID]. I did not place it. Call [PHONE].
+T0149,True,ok,22,The invoice for [ORDER_ID] shows a wrong amount. Call me on [PHONE] to correct the bill.
+T0070,True,ok,24,"Delivery for [ORDER_ID] is very late, it was promised in 20 minutes. Write to [EMAIL]"
+T0026,True,ok,24,"Delivery for [ORDER_ID] is very late, it was promised in 20 minutes. Write to [EMAIL]"
+T0097,True,ok,24,"Extra money was deducted for order [ORDER_ID], please check the bill. Contact [EMAIL]"
+T0132,True,ok,26,"I was charged for order [ORDER_ID] that I never made, it looks like fraud on my account. Call [PHONE]."
+T0027,True,ok,23,The payment page shows an error and the app freezes when I apply a coupon. Order [ORDER_ID].
+T0119,True,ok,23,The payment page shows an error and the app freezes when I apply a coupon. Order [ORDER_ID].
+T0157,False,empty_or_whitespace,0,
+T0058,True,ok,24,"Delivery for [ORDER_ID] is very late, it was promised in 20 minutes. Write to [EMAIL]"
+T0110,True,ok,24,My order [ORDER_ID] has not arrived and the rider is not picking up calls. Please call [PHONE].
+T0018,True,ok,24,"Delivery for [ORDER_ID] is very late, it was promised in 20 minutes. Write to [EMAIL]"
+T0032,True,ok,28,There is an unauthorized transaction on my card linked to order [ORDER_ID]. I did not place it. Call [PHONE].
+T0003,True,ok,13,"I cannot login, the OTP never arrives on [PHONE]."
+T0042,True,ok,22,The rider marked [ORDER_ID] as delivered but I never received the package. Call [PHONE].
+T0056,True,ok,28,There is an unauthorized transaction on my card linked to order [ORDER_ID]. I did not place it. Call [PHONE].
+T0114,True,ok,22,The rider marked [ORDER_ID] as delivered but I never received the package. Call [PHONE].
+T0083,True,ok,13,"I cannot login, the OTP never arrives on [PHONE]."
+T0138,True,ok,24,"Delivery for [ORDER_ID] is very late, it was promised in 20 minutes. Write to [EMAIL]"
+T0057,True,ok,24,"Extra money was deducted for order [ORDER_ID], please check the bill. Contact [EMAIL]"
+T0076,True,ok,26,"I was charged for order [ORDER_ID] that I never made, it looks like fraud on my account. Call [PHONE]."
+T0019,True,ok,30,The app crashes every time I open the cart. I tried to place [ORDER_ID] again and got an error. Email [EMAIL]
+T0103,True,ok,23,The payment page shows an error and the app freezes when I apply a coupon. Order [ORDER_ID].
+T0164,False,too_long,775,
+T0090,True,ok,24,My order [ORDER_ID] has not arrived and the rider is not picking up calls. Please call [PHONE].
+T0112,True,ok,26,"I was charged for order [ORDER_ID] that I never made, it looks like fraud on my account. Call [PHONE]."
+T0133,True,ok,24,"Extra money was deducted for order [ORDER_ID], please check the bill. Contact [EMAIL]"
+T0014,True,ok,24,"Delivery for [ORDER_ID] is very late, it was promised in 20 minutes. Write to [EMAIL]"
+T0158,False,empty_or_whitespace,0,
+T0020,True,ok,28,There is an unauthorized transaction on my card linked to order [ORDER_ID]. I did not place it. Call [PHONE].
+T0142,True,ok,24,My order [ORDER_ID] has not arrived and the rider is not picking up calls. Please call [PHONE].
+T0086,True,ok,22,The rider marked [ORDER_ID] as delivered but I never received the package. Call [PHONE].
+T0141,True,ok,24,"Extra money was deducted for order [ORDER_ID], please check the bill. Contact [EMAIL]"
+T0044,True,ok,24,"Someone hacked my account and used my wallet balance. This is fraud, contact [EMAIL]"
+T0117,True,ok,24,"Extra money was deducted for order [ORDER_ID], please check the bill. Contact [EMAIL]"
+T0078,True,ok,22,The rider marked [ORDER_ID] as delivered but I never received the package. Call [PHONE].
+T0140,True,ok,28,There is an unauthorized transaction on my card linked to order [ORDER_ID]. I did not place it. Call [PHONE].
+T0071,True,ok,30,The app crashes every time I open the cart. I tried to place [ORDER_ID] again and got an error. Email [EMAIL]
+T0161,False,too_long,775,
+T0150,True,ok,22,The rider marked [ORDER_ID] as delivered but I never received the package. Call [PHONE].
+T0065,True,ok,22,The invoice for [ORDER_ID] shows a wrong amount. Call me on [PHONE] to correct the bill.
+T0128,True,ok,24,"Someone hacked my account and used my wallet balance. This is fraud, contact [EMAIL]"
+T0005,True,ok,24,"Extra money was deducted for order [ORDER_ID], please check the bill. Contact [EMAIL]"
+T0098,True,ok,22,The rider marked [ORDER_ID] as delivered but I never received the package. Call [PHONE].

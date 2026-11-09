@@ -1,0 +1,23 @@
+CUSTOMER: 'I received a damaged product. Can I get a refund?'
+CO-PILOT: I'm sorry that your item had a problem. Damaged/poor-quality item: a human agent must verify the damage with the customer before any refund (the policy has no automatic rule for it). I have passed your case to a human agent (case ESC-0079); they will contact you.
+  [category=Product Quality decision=HUMAN_REVIEW escalated=True case=ESC-0079 sources=['refund_policy.txt']]
+
+CUSTOMER: 'What delivery time makes a completed order eligible for a full refund?'
+CO-PILOT: If a completed order is delivered in more than 45 minutes, the customer receives a full refund of the order amount. If a completed order is delivered in 45 minutes or less, no late-delivery refund is paid.
+  [category=Refund Request decision=POLICY_ANSWER escalated=False case=None sources=['refund_policy.txt']]
+
+CUSTOMER: 'ORD-100048 was delivered very late, I want a refund.'
+CO-PILOT: Good news - Delivered in 65 min (> 45): full refund of INR 128.25. The refund will be credited to your original payment method within 5 working days.
+  [category=Refund Request decision=AUTO_APPROVE escalated=False case=None sources=['refund_policy.txt']]
+
+CUSTOMER: 'There is an unauthorized transaction on my card. I did not place it.'
+CO-PILOT: I'm sorry to hear that - your security matters. Fraud: marked high priority and sent to the security team. I have passed your case to a human agent (case ESC-0080); they will contact you.
+  [category=Fraud Report decision=HUMAN_REVIEW escalated=True case=ESC-0080 sources=['escalation_policy.txt']]
+
+CUSTOMER: 'Do you sell gift cards for international travel?'
+CO-PILOT: No policy covers that; handing over to a human agent. Your case reference is ESC-0081.
+  [category=Other decision=HUMAN_REVIEW escalated=True case=ESC-0081 sources=[]]
+
+CUSTOMER: '   '
+CO-PILOT: Please type your question first.
+  [category=None decision=None escalated=False case=None sources=None]

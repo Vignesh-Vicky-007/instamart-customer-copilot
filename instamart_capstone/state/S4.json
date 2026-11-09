@@ -1,0 +1,105 @@
+{
+ "scenario_id": "S4",
+ "history": [
+  {
+   "tool": "lookup_order",
+   "args": {
+    "order_id": "ORD-100020"
+   },
+   "obs": {
+    "found": true,
+    "status": "cancelled",
+    "delivery_minutes": null,
+    "order_amount": 247.0
+   }
+  },
+  {
+   "tool": "check_policy",
+   "args": {
+    "query": "refund eligibility late delivery approval limit"
+   },
+   "obs": {
+    "sources": [
+     "refund_policy.txt"
+    ],
+    "late_minutes": 45,
+    "auto_limit": 1000
+   }
+  },
+  {
+   "tool": "compute_refund",
+   "args": {
+    "status": "cancelled",
+    "delivery_minutes": null,
+    "order_amount": 247.0
+   },
+   "obs": {
+    "eligible": false,
+    "amount": 0.0,
+    "needs_approval": false,
+    "reason": "order status is 'cancelled'; only completed orders are refundable"
+   }
+  }
+ ],
+ "steps": [
+  {
+   "step": 1,
+   "type": "tool",
+   "tool": "lookup_order",
+   "args": {
+    "order_id": "ORD-100020"
+   },
+   "observation": {
+    "found": true,
+    "status": "cancelled",
+    "delivery_minutes": null,
+    "order_amount": 247.0
+   },
+   "tokens": 108
+  },
+  {
+   "step": 2,
+   "type": "tool",
+   "tool": "check_policy",
+   "args": {
+    "query": "refund eligibility late delivery approval limit"
+   },
+   "observation": {
+    "sources": [
+     "refund_policy.txt"
+    ],
+    "late_minutes": 45,
+    "auto_limit": 1000
+   },
+   "tokens": 146
+  },
+  {
+   "step": 3,
+   "type": "tool",
+   "tool": "compute_refund",
+   "args": {
+    "status": "cancelled",
+    "delivery_minutes": null,
+    "order_amount": 247.0
+   },
+   "observation": {
+    "eligible": false,
+    "amount": 0.0,
+    "needs_approval": false,
+    "reason": "order status is 'cancelled'; only completed orders are refundable"
+   },
+   "tokens": 177
+  },
+  {
+   "step": 4,
+   "type": "final",
+   "status": "NO_REFUND",
+   "answer": "No refund: order status is 'cancelled'; only completed orders are refundable.",
+   "tokens": 221
+  }
+ ],
+ "llm_calls": 4,
+ "tokens_used": 652,
+ "clock": 0.7999999999999999,
+ "complete": true
+}

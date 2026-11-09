@@ -1,0 +1,5 @@
+strategy,chunks,right_doc,fact_found,questions,failed_questions
+sentence size=2 overlap=1 (default),29,14,14,14,
+sentence size=2 overlap=0,19,14,14,14,
+window 300 chars overlap=60,13,14,14,14,
+window 300 chars overlap=0 (zero-overlap run),11,14,12,14,On orders of what value is delivery free? | After how many steps must an automated assistant hand over to a human?

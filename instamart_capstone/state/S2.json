@@ -1,0 +1,128 @@
+{
+ "scenario_id": "S2",
+ "history": [
+  {
+   "tool": "lookup_order",
+   "args": {
+    "order_id": "ORD-100145"
+   },
+   "obs": {
+    "found": true,
+    "status": "completed",
+    "delivery_minutes": 54.0,
+    "order_amount": 1999.0
+   }
+  },
+  {
+   "tool": "check_policy",
+   "args": {
+    "query": "refund eligibility late delivery approval limit"
+   },
+   "obs": {
+    "sources": [
+     "refund_policy.txt"
+    ],
+    "late_minutes": 45,
+    "auto_limit": 1000
+   }
+  },
+  {
+   "tool": "compute_refund",
+   "args": {
+    "status": "completed",
+    "delivery_minutes": 54.0,
+    "order_amount": 1999.0
+   },
+   "obs": {
+    "eligible": true,
+    "amount": 1999.0,
+    "needs_approval": true,
+    "reason": "delivered in 54 min (> 45); above INR 1000, needs human approval"
+   }
+  },
+  {
+   "tool": "escalate_to_human",
+   "args": {
+    "reason": "Refund INR 1999.00 delivered in 54 min (> 45); above INR 1000, needs human approval",
+    "order_id": "ORD-100145"
+   },
+   "obs": {
+    "escalated": true
+   }
+  }
+ ],
+ "steps": [
+  {
+   "step": 1,
+   "type": "tool",
+   "tool": "lookup_order",
+   "args": {
+    "order_id": "ORD-100145"
+   },
+   "observation": {
+    "found": true,
+    "status": "completed",
+    "delivery_minutes": 54.0,
+    "order_amount": 1999.0
+   },
+   "tokens": 107
+  },
+  {
+   "step": 2,
+   "type": "tool",
+   "tool": "check_policy",
+   "args": {
+    "query": "refund eligibility late delivery approval limit"
+   },
+   "observation": {
+    "sources": [
+     "refund_policy.txt"
+    ],
+    "late_minutes": 45,
+    "auto_limit": 1000
+   },
+   "tokens": 146
+  },
+  {
+   "step": 3,
+   "type": "tool",
+   "tool": "compute_refund",
+   "args": {
+    "status": "completed",
+    "delivery_minutes": 54.0,
+    "order_amount": 1999.0
+   },
+   "observation": {
+    "eligible": true,
+    "amount": 1999.0,
+    "needs_approval": true,
+    "reason": "delivered in 54 min (> 45); above INR 1000, needs human approval"
+   },
+   "tokens": 177
+  },
+  {
+   "step": 4,
+   "type": "tool",
+   "tool": "escalate_to_human",
+   "args": {
+    "reason": "Refund INR 1999.00 delivered in 54 min (> 45); above INR 1000, needs human approval",
+    "order_id": "ORD-100145"
+   },
+   "observation": {
+    "escalated": true
+   },
+   "tokens": 233
+  },
+  {
+   "step": 5,
+   "type": "final",
+   "status": "ESCALATED",
+   "answer": "I have passed your case to a human agent who will contact you.",
+   "tokens": 232
+  }
+ ],
+ "llm_calls": 5,
+ "tokens_used": 895,
+ "clock": 1.0999999999999999,
+ "complete": true
+}

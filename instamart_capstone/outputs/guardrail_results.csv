@@ -1,0 +1,165 @@
+ticket_id,mode,allowed,reason,tokens_approx,redacted_text,category,priority,action
+T0024,few_shot,True,ok,28,There is an unauthorized transaction on my card linked to order [ORDER_ID]. I did not place it. Call [PHONE].,Fraud Report,High,Escalate to the security team within 2 hours
+T0073,few_shot,True,ok,22,The invoice for [ORDER_ID] shows a wrong amount. Call me on [PHONE] to correct the bill.,Payment Issue,Medium,Verify the charge against the order
+T0095,few_shot,True,ok,23,The payment page shows an error and the app freezes when I apply a coupon. Order [ORDER_ID].,App Crash,Low,Route to app support
+T0159,few_shot,False,empty_or_whitespace,0,,,,
+T0080,few_shot,True,ok,26,"I was charged for order [ORDER_ID] that I never made, it looks like fraud on my account. Call [PHONE].",Fraud Report,High,Escalate to the security team within 2 hours
+T0124,few_shot,True,ok,26,"I was charged for order [ORDER_ID] that I never made, it looks like fraud on my account. Call [PHONE].",Fraud Report,High,Escalate to the security team within 2 hours
+T0061,few_shot,True,ok,24,"Extra money was deducted for order [ORDER_ID], please check the bill. Contact [EMAIL]",Payment Issue,Medium,Verify the charge against the order
+T0118,few_shot,True,ok,24,"Delivery for [ORDER_ID] is very late, it was promised in 20 minutes. Write to [EMAIL]",Delivery Delay,Medium,Check delivery status
+T0037,few_shot,True,ok,26,I was charged twice for order [ORDER_ID]. Please refund the extra payment. My email is [EMAIL],Payment Issue,Medium,Verify the charge against the order
+T0002,few_shot,True,ok,22,The rider marked [ORDER_ID] as delivered but I never received the package. Call [PHONE].,Delivery Delay,Medium,Check delivery status
+T0163,few_shot,False,too_long,775,,,,
+T0031,few_shot,True,ok,23,The payment page shows an error and the app freezes when I apply a coupon. Order [ORDER_ID].,App Crash,Low,Route to app support
+T0047,few_shot,True,ok,13,"I cannot login, the OTP never arrives on [PHONE].",App Crash,Low,Route to app support
+T0063,few_shot,True,ok,13,"I cannot login, the OTP never arrives on [PHONE].",App Crash,Low,Route to app support
+T0121,few_shot,True,ok,26,I was charged twice for order [ORDER_ID]. Please refund the extra payment. My email is [EMAIL],Payment Issue,Medium,Verify the charge against the order
+T0139,few_shot,True,ok,30,The app crashes every time I open the cart. I tried to place [ORDER_ID] again and got an error. Email [EMAIL],App Crash,Low,Route to app support
+T0115,few_shot,True,ok,13,"I cannot login, the OTP never arrives on [PHONE].",App Crash,Low,Route to app support
+T0123,few_shot,True,ok,13,"I cannot login, the OTP never arrives on [PHONE].",App Crash,Low,Route to app support
+T0116,few_shot,True,ok,26,"I was charged for order [ORDER_ID] that I never made, it looks like fraud on my account. Call [PHONE].",Fraud Report,High,Escalate to the security team within 2 hours
+T0136,few_shot,True,ok,24,"Someone hacked my account and used my wallet balance. This is fraud, contact [EMAIL]",Fraud Report,High,Escalate to the security team within 2 hours
+T0008,few_shot,True,ok,28,There is an unauthorized transaction on my card linked to order [ORDER_ID]. I did not place it. Call [PHONE].,Fraud Report,High,Escalate to the security team within 2 hours
+T0102,few_shot,True,ok,24,My order [ORDER_ID] has not arrived and the rider is not picking up calls. Please call [PHONE].,Delivery Delay,Medium,Check delivery status
+T0072,few_shot,True,ok,26,"I was charged for order [ORDER_ID] that I never made, it looks like fraud on my account. Call [PHONE].",Fraud Report,High,Escalate to the security team within 2 hours
+T0101,few_shot,True,ok,22,The invoice for [ORDER_ID] shows a wrong amount. Call me on [PHONE] to correct the bill.,Payment Issue,Medium,Verify the charge against the order
+T0059,few_shot,True,ok,13,"I cannot login, the OTP never arrives on [PHONE].",App Crash,Low,Route to app support
+T0049,few_shot,True,ok,22,The invoice for [ORDER_ID] shows a wrong amount. Call me on [PHONE] to correct the bill.,Payment Issue,Medium,Verify the charge against the order
+T0153,few_shot,True,ok,24,"Extra money was deducted for order [ORDER_ID], please check the bill. Contact [EMAIL]",Payment Issue,Medium,Verify the charge against the order
+T0050,few_shot,True,ok,22,The rider marked [ORDER_ID] as delivered but I never received the package. Call [PHONE].,Delivery Delay,Medium,Check delivery status
+T0147,few_shot,True,ok,23,The payment page shows an error and the app freezes when I apply a coupon. Order [ORDER_ID].,App Crash,Low,Route to app support
+T0074,few_shot,True,ok,22,The rider marked [ORDER_ID] as delivered but I never received the package. Call [PHONE].,Delivery Delay,Medium,Check delivery status
+T0156,few_shot,True,ok,28,There is an unauthorized transaction on my card linked to order [ORDER_ID]. I did not place it. Call [PHONE].,Fraud Report,High,Escalate to the security team within 2 hours
+T0145,few_shot,True,ok,22,The invoice for [ORDER_ID] shows a wrong amount. Call me on [PHONE] to correct the bill.,Payment Issue,Medium,Verify the charge against the order
+T0053,few_shot,True,ok,26,I was charged twice for order [ORDER_ID]. Please refund the extra payment. My email is [EMAIL],Payment Issue,Medium,Verify the charge against the order
+T0134,few_shot,True,ok,24,My order [ORDER_ID] has not arrived and the rider is not picking up calls. Please call [PHONE].,Delivery Delay,Medium,Check delivery status
+T0039,few_shot,True,ok,30,The app crashes every time I open the cart. I tried to place [ORDER_ID] again and got an error. Email [EMAIL],App Crash,Low,Route to app support
+T0016,few_shot,True,ok,26,"I was charged for order [ORDER_ID] that I never made, it looks like fraud on my account. Call [PHONE].",Fraud Report,High,Escalate to the security team within 2 hours
+T0055,few_shot,True,ok,30,The app crashes every time I open the cart. I tried to place [ORDER_ID] again and got an error. Email [EMAIL],App Crash,Low,Route to app support
+T0130,few_shot,True,ok,24,My order [ORDER_ID] has not arrived and the rider is not picking up calls. Please call [PHONE].,Delivery Delay,Medium,Check delivery status
+T0099,few_shot,True,ok,30,The app crashes every time I open the cart. I tried to place [ORDER_ID] again and got an error. Email [EMAIL],App Crash,Low,Route to app support
+T0062,few_shot,True,ok,22,The rider marked [ORDER_ID] as delivered but I never received the package. Call [PHONE].,Delivery Delay,Medium,Check delivery status
+T0013,few_shot,True,ok,26,I was charged twice for order [ORDER_ID]. Please refund the extra payment. My email is [EMAIL],Payment Issue,Medium,Verify the charge against the order
+T0137,few_shot,True,ok,22,The invoice for [ORDER_ID] shows a wrong amount. Call me on [PHONE] to correct the bill.,Payment Issue,Medium,Verify the charge against the order
+T0152,few_shot,True,ok,26,"I was charged for order [ORDER_ID] that I never made, it looks like fraud on my account. Call [PHONE].",Fraud Report,High,Escalate to the security team within 2 hours
+T0144,few_shot,True,ok,26,"I was charged for order [ORDER_ID] that I never made, it looks like fraud on my account. Call [PHONE].",Fraud Report,High,Escalate to the security team within 2 hours
+T0094,few_shot,True,ok,24,My order [ORDER_ID] has not arrived and the rider is not picking up calls. Please call [PHONE].,Delivery Delay,Medium,Check delivery status
+T0021,few_shot,True,ok,24,"Extra money was deducted for order [ORDER_ID], please check the bill. Contact [EMAIL]",Payment Issue,Medium,Verify the charge against the order
+T0077,few_shot,True,ok,24,"Extra money was deducted for order [ORDER_ID], please check the bill. Contact [EMAIL]",Payment Issue,Medium,Verify the charge against the order
+T0036,few_shot,True,ok,26,"I was charged for order [ORDER_ID] that I never made, it looks like fraud on my account. Call [PHONE].",Fraud Report,High,Escalate to the security team within 2 hours
+T0113,few_shot,True,ok,24,"Extra money was deducted for order [ORDER_ID], please check the bill. Contact [EMAIL]",Payment Issue,Medium,Verify the charge against the order
+T0060,few_shot,True,ok,28,There is an unauthorized transaction on my card linked to order [ORDER_ID]. I did not place it. Call [PHONE].,Fraud Report,High,Escalate to the security team within 2 hours
+T0043,few_shot,True,ok,13,"I cannot login, the OTP never arrives on [PHONE].",App Crash,Low,Route to app support
+T0048,few_shot,True,ok,24,"Someone hacked my account and used my wallet balance. This is fraud, contact [EMAIL]",Fraud Report,High,Escalate to the security team within 2 hours
+T0154,few_shot,True,ok,24,My order [ORDER_ID] has not arrived and the rider is not picking up calls. Please call [PHONE].,Delivery Delay,Medium,Check delivery status
+T0125,few_shot,True,ok,24,"Extra money was deducted for order [ORDER_ID], please check the bill. Contact [EMAIL]",Payment Issue,Medium,Verify the charge against the order
+T0146,few_shot,True,ok,24,"Delivery for [ORDER_ID] is very late, it was promised in 20 minutes. Write to [EMAIL]",Delivery Delay,Medium,Check delivery status
+T0107,few_shot,True,ok,13,"I cannot login, the OTP never arrives on [PHONE].",App Crash,Low,Route to app support
+T0011,few_shot,True,ok,30,The app crashes every time I open the cart. I tried to place [ORDER_ID] again and got an error. Email [EMAIL],App Crash,Low,Route to app support
+T0017,few_shot,True,ok,22,The invoice for [ORDER_ID] shows a wrong amount. Call me on [PHONE] to correct the bill.,Payment Issue,Medium,Verify the charge against the order
+T0111,few_shot,True,ok,13,"I cannot login, the OTP never arrives on [PHONE].",App Crash,Low,Route to app support
+T0041,few_shot,True,ok,26,I was charged twice for order [ORDER_ID]. Please refund the extra payment. My email is [EMAIL],Payment Issue,Medium,Verify the charge against the order
+T0120,few_shot,True,ok,28,There is an unauthorized transaction on my card linked to order [ORDER_ID]. I did not place it. Call [PHONE].,Fraud Report,High,Escalate to the security team within 2 hours
+T0122,few_shot,True,ok,22,The rider marked [ORDER_ID] as delivered but I never received the package. Call [PHONE].,Delivery Delay,Medium,Check delivery status
+T0001,few_shot,True,ok,26,I was charged twice for order [ORDER_ID]. Please refund the extra payment. My email is [EMAIL],Payment Issue,Medium,Verify the charge against the order
+T0064,few_shot,True,ok,28,There is an unauthorized transaction on my card linked to order [ORDER_ID]. I did not place it. Call [PHONE].,Fraud Report,High,Escalate to the security team within 2 hours
+T0092,few_shot,True,ok,24,"Someone hacked my account and used my wallet balance. This is fraud, contact [EMAIL]",Fraud Report,High,Escalate to the security team within 2 hours
+T0038,few_shot,True,ok,22,The rider marked [ORDER_ID] as delivered but I never received the package. Call [PHONE].,Delivery Delay,Medium,Check delivery status
+T0155,few_shot,True,ok,30,The app crashes every time I open the cart. I tried to place [ORDER_ID] again and got an error. Email [EMAIL],App Crash,Low,Route to app support
+T0104,few_shot,True,ok,24,"Someone hacked my account and used my wallet balance. This is fraud, contact [EMAIL]",Fraud Report,High,Escalate to the security team within 2 hours
+T0012,few_shot,True,ok,26,"I was charged for order [ORDER_ID] that I never made, it looks like fraud on my account. Call [PHONE].",Fraud Report,High,Escalate to the security team within 2 hours
+T0084,few_shot,True,ok,28,There is an unauthorized transaction on my card linked to order [ORDER_ID]. I did not place it. Call [PHONE].,Fraud Report,High,Escalate to the security team within 2 hours
+T0051,few_shot,True,ok,13,"I cannot login, the OTP never arrives on [PHONE].",App Crash,Low,Route to app support
+T0143,few_shot,True,ok,30,The app crashes every time I open the cart. I tried to place [ORDER_ID] again and got an error. Email [EMAIL],App Crash,Low,Route to app support
+T0035,few_shot,True,ok,23,The payment page shows an error and the app freezes when I apply a coupon. Order [ORDER_ID].,App Crash,Low,Route to app support
+T0028,few_shot,True,ok,28,There is an unauthorized transaction on my card linked to order [ORDER_ID]. I did not place it. Call [PHONE].,Fraud Report,High,Escalate to the security team within 2 hours
+T0100,few_shot,True,ok,28,There is an unauthorized transaction on my card linked to order [ORDER_ID]. I did not place it. Call [PHONE].,Fraud Report,High,Escalate to the security team within 2 hours
+T0022,few_shot,True,ok,24,My order [ORDER_ID] has not arrived and the rider is not picking up calls. Please call [PHONE].,Delivery Delay,Medium,Check delivery status
+T0082,few_shot,True,ok,22,The rider marked [ORDER_ID] as delivered but I never received the package. Call [PHONE].,Delivery Delay,Medium,Check delivery status
+T0127,few_shot,True,ok,23,The payment page shows an error and the app freezes when I apply a coupon. Order [ORDER_ID].,App Crash,Low,Route to app support
+T0162,few_shot,False,too_long,775,,,,
+T0109,few_shot,True,ok,26,I was charged twice for order [ORDER_ID]. Please refund the extra payment. My email is [EMAIL],Payment Issue,Medium,Verify the charge against the order
+T0046,few_shot,True,ok,24,My order [ORDER_ID] has not arrived and the rider is not picking up calls. Please call [PHONE].,Delivery Delay,Medium,Check delivery status
+T0081,few_shot,True,ok,22,The invoice for [ORDER_ID] shows a wrong amount. Call me on [PHONE] to correct the bill.,Payment Issue,Medium,Verify the charge against the order
+T0007,few_shot,True,ok,13,"I cannot login, the OTP never arrives on [PHONE].",App Crash,Low,Route to app support
+T0068,few_shot,True,ok,26,"I was charged for order [ORDER_ID] that I never made, it looks like fraud on my account. Call [PHONE].",Fraud Report,High,Escalate to the security team within 2 hours
+T0085,few_shot,True,ok,22,The invoice for [ORDER_ID] shows a wrong amount. Call me on [PHONE] to correct the bill.,Payment Issue,Medium,Verify the charge against the order
+T0075,few_shot,True,ok,30,The app crashes every time I open the cart. I tried to place [ORDER_ID] again and got an error. Email [EMAIL],App Crash,Low,Route to app support
+T0052,few_shot,True,ok,28,There is an unauthorized transaction on my card linked to order [ORDER_ID]. I did not place it. Call [PHONE].,Fraud Report,High,Escalate to the security team within 2 hours
+T0066,few_shot,True,ok,24,My order [ORDER_ID] has not arrived and the rider is not picking up calls. Please call [PHONE].,Delivery Delay,Medium,Check delivery status
+T0151,few_shot,True,ok,13,"I cannot login, the OTP never arrives on [PHONE].",App Crash,Low,Route to app support
+T0131,few_shot,True,ok,13,"I cannot login, the OTP never arrives on [PHONE].",App Crash,Low,Route to app support
+T0006,few_shot,True,ok,24,"Delivery for [ORDER_ID] is very late, it was promised in 20 minutes. Write to [EMAIL]",Delivery Delay,Medium,Check delivery status
+T0135,few_shot,True,ok,23,The payment page shows an error and the app freezes when I apply a coupon. Order [ORDER_ID].,App Crash,Low,Route to app support
+T0079,few_shot,True,ok,13,"I cannot login, the OTP never arrives on [PHONE].",App Crash,Low,Route to app support
+T0040,few_shot,True,ok,28,There is an unauthorized transaction on my card linked to order [ORDER_ID]. I did not place it. Call [PHONE].,Fraud Report,High,Escalate to the security team within 2 hours
+T0093,few_shot,True,ok,22,The invoice for [ORDER_ID] shows a wrong amount. Call me on [PHONE] to correct the bill.,Payment Issue,Medium,Verify the charge against the order
+T0089,few_shot,True,ok,24,"Extra money was deducted for order [ORDER_ID], please check the bill. Contact [EMAIL]",Payment Issue,Medium,Verify the charge against the order
+T0034,few_shot,True,ok,24,My order [ORDER_ID] has not arrived and the rider is not picking up calls. Please call [PHONE].,Delivery Delay,Medium,Check delivery status
+T0033,few_shot,True,ok,22,The invoice for [ORDER_ID] shows a wrong amount. Call me on [PHONE] to correct the bill.,Payment Issue,Medium,Verify the charge against the order
+T0160,few_shot,False,empty_or_whitespace,0,,,,
+T0087,few_shot,True,ok,30,The app crashes every time I open the cart. I tried to place [ORDER_ID] again and got an error. Email [EMAIL],App Crash,Low,Route to app support
+T0009,few_shot,True,ok,26,I was charged twice for order [ORDER_ID]. Please refund the extra payment. My email is [EMAIL],Payment Issue,Medium,Verify the charge against the order
+T0108,few_shot,True,ok,26,"I was charged for order [ORDER_ID] that I never made, it looks like fraud on my account. Call [PHONE].",Fraud Report,High,Escalate to the security team within 2 hours
+T0054,few_shot,True,ok,24,"Delivery for [ORDER_ID] is very late, it was promised in 20 minutes. Write to [EMAIL]",Delivery Delay,Medium,Check delivery status
+T0025,few_shot,True,ok,22,The invoice for [ORDER_ID] shows a wrong amount. Call me on [PHONE] to correct the bill.,Payment Issue,Medium,Verify the charge against the order
+T0004,few_shot,True,ok,28,There is an unauthorized transaction on my card linked to order [ORDER_ID]. I did not place it. Call [PHONE].,Fraud Report,High,Escalate to the security team within 2 hours
+T0148,few_shot,True,ok,28,There is an unauthorized transaction on my card linked to order [ORDER_ID]. I did not place it. Call [PHONE].,Fraud Report,High,Escalate to the security team within 2 hours
+T0088,few_shot,True,ok,24,"Someone hacked my account and used my wallet balance. This is fraud, contact [EMAIL]",Fraud Report,High,Escalate to the security team within 2 hours
+T0030,few_shot,True,ok,24,"Delivery for [ORDER_ID] is very late, it was promised in 20 minutes. Write to [EMAIL]",Delivery Delay,Medium,Check delivery status
+T0067,few_shot,True,ok,13,"I cannot login, the OTP never arrives on [PHONE].",App Crash,Low,Route to app support
+T0029,few_shot,True,ok,22,The invoice for [ORDER_ID] shows a wrong amount. Call me on [PHONE] to correct the bill.,Payment Issue,Medium,Verify the charge against the order
+T0129,few_shot,True,ok,26,I was charged twice for order [ORDER_ID]. Please refund the extra payment. My email is [EMAIL],Payment Issue,Medium,Verify the charge against the order
+T0105,few_shot,True,ok,24,"Extra money was deducted for order [ORDER_ID], please check the bill. Contact [EMAIL]",Payment Issue,Medium,Verify the charge against the order
+T0045,few_shot,True,ok,22,The invoice for [ORDER_ID] shows a wrong amount. Call me on [PHONE] to correct the bill.,Payment Issue,Medium,Verify the charge against the order
+T0069,few_shot,True,ok,22,The invoice for [ORDER_ID] shows a wrong amount. Call me on [PHONE] to correct the bill.,Payment Issue,Medium,Verify the charge against the order
+T0010,few_shot,True,ok,24,"Delivery for [ORDER_ID] is very late, it was promised in 20 minutes. Write to [EMAIL]",Delivery Delay,Medium,Check delivery status
+T0023,few_shot,True,ok,13,"I cannot login, the OTP never arrives on [PHONE].",App Crash,Low,Route to app support
+T0106,few_shot,True,ok,24,"Delivery for [ORDER_ID] is very late, it was promised in 20 minutes. Write to [EMAIL]",Delivery Delay,Medium,Check delivery status
+T0015,few_shot,True,ok,23,The payment page shows an error and the app freezes when I apply a coupon. Order [ORDER_ID].,App Crash,Low,Route to app support
+T0091,few_shot,True,ok,30,The app crashes every time I open the cart. I tried to place [ORDER_ID] again and got an error. Email [EMAIL],App Crash,Low,Route to app support
+T0126,few_shot,True,ok,22,The rider marked [ORDER_ID] as delivered but I never received the package. Call [PHONE].,Delivery Delay,Medium,Check delivery status
+T0096,few_shot,True,ok,28,There is an unauthorized transaction on my card linked to order [ORDER_ID]. I did not place it. Call [PHONE].,Fraud Report,High,Escalate to the security team within 2 hours
+T0149,few_shot,True,ok,22,The invoice for [ORDER_ID] shows a wrong amount. Call me on [PHONE] to correct the bill.,Payment Issue,Medium,Verify the charge against the order
+T0070,few_shot,True,ok,24,"Delivery for [ORDER_ID] is very late, it was promised in 20 minutes. Write to [EMAIL]",Delivery Delay,Medium,Check delivery status
+T0026,few_shot,True,ok,24,"Delivery for [ORDER_ID] is very late, it was promised in 20 minutes. Write to [EMAIL]",Delivery Delay,Medium,Check delivery status
+T0097,few_shot,True,ok,24,"Extra money was deducted for order [ORDER_ID], please check the bill. Contact [EMAIL]",Payment Issue,Medium,Verify the charge against the order
+T0132,few_shot,True,ok,26,"I was charged for order [ORDER_ID] that I never made, it looks like fraud on my account. Call [PHONE].",Fraud Report,High,Escalate to the security team within 2 hours
+T0027,few_shot,True,ok,23,The payment page shows an error and the app freezes when I apply a coupon. Order [ORDER_ID].,App Crash,Low,Route to app support
+T0119,few_shot,True,ok,23,The payment page shows an error and the app freezes when I apply a coupon. Order [ORDER_ID].,App Crash,Low,Route to app support
+T0157,few_shot,False,empty_or_whitespace,0,,,,
+T0058,few_shot,True,ok,24,"Delivery for [ORDER_ID] is very late, it was promised in 20 minutes. Write to [EMAIL]",Delivery Delay,Medium,Check delivery status
+T0110,few_shot,True,ok,24,My order [ORDER_ID] has not arrived and the rider is not picking up calls. Please call [PHONE].,Delivery Delay,Medium,Check delivery status
+T0018,few_shot,True,ok,24,"Delivery for [ORDER_ID] is very late, it was promised in 20 minutes. Write to [EMAIL]",Delivery Delay,Medium,Check delivery status
+T0032,few_shot,True,ok,28,There is an unauthorized transaction on my card linked to order [ORDER_ID]. I did not place it. Call [PHONE].,Fraud Report,High,Escalate to the security team within 2 hours
+T0003,few_shot,True,ok,13,"I cannot login, the OTP never arrives on [PHONE].",App Crash,Low,Route to app support
+T0042,few_shot,True,ok,22,The rider marked [ORDER_ID] as delivered but I never received the package. Call [PHONE].,Delivery Delay,Medium,Check delivery status
+T0056,few_shot,True,ok,28,There is an unauthorized transaction on my card linked to order [ORDER_ID]. I did not place it. Call [PHONE].,Fraud Report,High,Escalate to the security team within 2 hours
+T0114,few_shot,True,ok,22,The rider marked [ORDER_ID] as delivered but I never received the package. Call [PHONE].,Delivery Delay,Medium,Check delivery status
+T0083,few_shot,True,ok,13,"I cannot login, the OTP never arrives on [PHONE].",App Crash,Low,Route to app support
+T0138,few_shot,True,ok,24,"Delivery for [ORDER_ID] is very late, it was promised in 20 minutes. Write to [EMAIL]",Delivery Delay,Medium,Check delivery status
+T0057,few_shot,True,ok,24,"Extra money was deducted for order [ORDER_ID], please check the bill. Contact [EMAIL]",Payment Issue,Medium,Verify the charge against the order
+T0076,few_shot,True,ok,26,"I was charged for order [ORDER_ID] that I never made, it looks like fraud on my account. Call [PHONE].",Fraud Report,High,Escalate to the security team within 2 hours
+T0019,few_shot,True,ok,30,The app crashes every time I open the cart. I tried to place [ORDER_ID] again and got an error. Email [EMAIL],App Crash,Low,Route to app support
+T0103,few_shot,True,ok,23,The payment page shows an error and the app freezes when I apply a coupon. Order [ORDER_ID].,App Crash,Low,Route to app support
+T0164,few_shot,False,too_long,775,,,,
+T0090,few_shot,True,ok,24,My order [ORDER_ID] has not arrived and the rider is not picking up calls. Please call [PHONE].,Delivery Delay,Medium,Check delivery status
+T0112,few_shot,True,ok,26,"I was charged for order [ORDER_ID] that I never made, it looks like fraud on my account. Call [PHONE].",Fraud Report,High,Escalate to the security team within 2 hours
+T0133,few_shot,True,ok,24,"Extra money was deducted for order [ORDER_ID], please check the bill. Contact [EMAIL]",Payment Issue,Medium,Verify the charge against the order
+T0014,few_shot,True,ok,24,"Delivery for [ORDER_ID] is very late, it was promised in 20 minutes. Write to [EMAIL]",Delivery Delay,Medium,Check delivery status
+T0158,few_shot,False,empty_or_whitespace,0,,,,
+T0020,few_shot,True,ok,28,There is an unauthorized transaction on my card linked to order [ORDER_ID]. I did not place it. Call [PHONE].,Fraud Report,High,Escalate to the security team within 2 hours
+T0142,few_shot,True,ok,24,My order [ORDER_ID] has not arrived and the rider is not picking up calls. Please call [PHONE].,Delivery Delay,Medium,Check delivery status
+T0086,few_shot,True,ok,22,The rider marked [ORDER_ID] as delivered but I never received the package. Call [PHONE].,Delivery Delay,Medium,Check delivery status
+T0141,few_shot,True,ok,24,"Extra money was deducted for order [ORDER_ID], please check the bill. Contact [EMAIL]",Payment Issue,Medium,Verify the charge against the order
+T0044,few_shot,True,ok,24,"Someone hacked my account and used my wallet balance. This is fraud, contact [EMAIL]",Fraud Report,High,Escalate to the security team within 2 hours
+T0117,few_shot,True,ok,24,"Extra money was deducted for order [ORDER_ID], please check the bill. Contact [EMAIL]",Payment Issue,Medium,Verify the charge against the order
+T0078,few_shot,True,ok,22,The rider marked [ORDER_ID] as delivered but I never received the package. Call [PHONE].,Delivery Delay,Medium,Check delivery status
+T0140,few_shot,True,ok,28,There is an unauthorized transaction on my card linked to order [ORDER_ID]. I did not place it. Call [PHONE].,Fraud Report,High,Escalate to the security team within 2 hours
+T0071,few_shot,True,ok,30,The app crashes every time I open the cart. I tried to place [ORDER_ID] again and got an error. Email [EMAIL],App Crash,Low,Route to app support
+T0161,few_shot,False,too_long,775,,,,
+T0150,few_shot,True,ok,22,The rider marked [ORDER_ID] as delivered but I never received the package. Call [PHONE].,Delivery Delay,Medium,Check delivery status
+T0065,few_shot,True,ok,22,The invoice for [ORDER_ID] shows a wrong amount. Call me on [PHONE] to correct the bill.,Payment Issue,Medium,Verify the charge against the order
+T0128,few_shot,True,ok,24,"Someone hacked my account and used my wallet balance. This is fraud, contact [EMAIL]",Fraud Report,High,Escalate to the security team within 2 hours
+T0005,few_shot,True,ok,24,"Extra money was deducted for order [ORDER_ID], please check the bill. Contact [EMAIL]",Payment Issue,Medium,Verify the charge against the order
+T0098,few_shot,True,ok,22,The rider marked [ORDER_ID] as delivered but I never received the package. Call [PHONE].,Delivery Delay,Medium,Check delivery status

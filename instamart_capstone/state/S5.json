@@ -1,0 +1,39 @@
+{
+ "scenario_id": "S5",
+ "history": [
+  {
+   "tool": "escalate_to_human",
+   "args": {
+    "reason": "Fraud report: security team review (high priority)"
+   },
+   "obs": {
+    "escalated": true
+   }
+  }
+ ],
+ "steps": [
+  {
+   "step": 1,
+   "type": "tool",
+   "tool": "escalate_to_human",
+   "args": {
+    "reason": "Fraud report: security team review (high priority)"
+   },
+   "observation": {
+    "escalated": true
+   },
+   "tokens": 126
+  },
+  {
+   "step": 2,
+   "type": "final",
+   "status": "ESCALATED",
+   "answer": "I have passed your case to a human agent who will contact you.",
+   "tokens": 140
+  }
+ ],
+ "llm_calls": 2,
+ "tokens_used": 266,
+ "clock": 0.3,
+ "complete": true
+}

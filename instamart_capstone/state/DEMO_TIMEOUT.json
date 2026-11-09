@@ -1,0 +1,73 @@
+{
+ "scenario_id": "DEMO_TIMEOUT",
+ "history": [
+  {
+   "tool": "lookup_order",
+   "args": {
+    "order_id": "ORD-100048"
+   },
+   "obs": {
+    "found": true,
+    "status": "completed",
+    "delivery_minutes": 65.0,
+    "order_amount": 128.25
+   }
+  },
+  {
+   "tool": "check_policy",
+   "args": {
+    "query": "refund eligibility late delivery approval limit"
+   },
+   "obs": {
+    "sources": [
+     "refund_policy.txt"
+    ],
+    "late_minutes": 45,
+    "auto_limit": 1000
+   }
+  }
+ ],
+ "steps": [
+  {
+   "step": 1,
+   "type": "tool",
+   "tool": "lookup_order",
+   "args": {
+    "order_id": "ORD-100048"
+   },
+   "observation": {
+    "found": true,
+    "status": "completed",
+    "delivery_minutes": 65.0,
+    "order_amount": 128.25
+   },
+   "tokens": 109
+  },
+  {
+   "step": 2,
+   "type": "tool",
+   "tool": "check_policy",
+   "args": {
+    "query": "refund eligibility late delivery approval limit"
+   },
+   "observation": {
+    "sources": [
+     "refund_policy.txt"
+    ],
+    "late_minutes": 45,
+    "auto_limit": 1000
+   },
+   "tokens": 147
+  },
+  {
+   "step": 3,
+   "type": "fallback",
+   "status": "FALLBACK_TIMEOUT",
+   "answer": "I could not finish this automatically (timeout after 25.2s (> 20.0s)); your case has been handed to a human agent."
+  }
+ ],
+ "llm_calls": 2,
+ "tokens_used": 256,
+ "clock": 25.2,
+ "complete": true
+}

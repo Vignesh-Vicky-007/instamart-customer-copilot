@@ -1,0 +1,16 @@
+Lapse = no completed order in September 2025 (features use orders before 2025-09-01)
+Customers: 1156, lapsed rate: 0.383, majority-class baseline accuracy: 0.616
+Best model: logistic_regression
+
+              model  accuracy  precision  recall    f1                                            best_params
+logistic_regression     0.728      0.644   0.652 0.648                                      {'model__C': 100}
+      random_forest     0.720      0.630   0.652 0.641 {'model__max_depth': 8, 'model__min_samples_leaf': 10}
+
+              precision    recall  f1-score   support
+
+      active       0.78      0.78      0.78       143
+      lapsed       0.64      0.65      0.65        89
+
+    accuracy                           0.73       232
+   macro avg       0.71      0.71      0.71       232
+weighted avg       0.73      0.73      0.73       232

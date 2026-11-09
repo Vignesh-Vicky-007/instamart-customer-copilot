@@ -1,0 +1,5 @@
+segment,customers,recency,frequency,monetary,interpretation
+At-Risk / Lapsing,182,109.0,2.2,686.0,Have not ordered for 60+ days on average - target with win-back offers (retention list).
+Champions / Premium,138,24.1,6.8,7129.7,Order often AND spend the most - protect with premium service and early offers.
+Low-Engagement / Occasional,436,28.9,3.8,1057.6,Still ordering but infrequently and spending less - nudge with repeat-purchase offers.
+Loyal / Active,419,8.8,19.4,3410.0,Order very frequently and recently - keep engaged with habit-building offers.

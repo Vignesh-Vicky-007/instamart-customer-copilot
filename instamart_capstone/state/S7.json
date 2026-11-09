@@ -1,0 +1,185 @@
+{
+ "scenario_id": "S7",
+ "history": [
+  {
+   "tool": "lookup_order",
+   "args": {
+    "order_id": "ORD-900000"
+   },
+   "obs": {
+    "found": false
+   }
+  },
+  {
+   "tool": "lookup_order",
+   "args": {
+    "order_id": "ORD-900001"
+   },
+   "obs": {
+    "found": false
+   }
+  },
+  {
+   "tool": "lookup_order",
+   "args": {
+    "order_id": "ORD-900002"
+   },
+   "obs": {
+    "found": false
+   }
+  },
+  {
+   "tool": "lookup_order",
+   "args": {
+    "order_id": "ORD-900003"
+   },
+   "obs": {
+    "found": false
+   }
+  },
+  {
+   "tool": "lookup_order",
+   "args": {
+    "order_id": "ORD-900004"
+   },
+   "obs": {
+    "found": false
+   }
+  },
+  {
+   "tool": "lookup_order",
+   "args": {
+    "order_id": "ORD-900005"
+   },
+   "obs": {
+    "found": false
+   }
+  },
+  {
+   "tool": "lookup_order",
+   "args": {
+    "order_id": "ORD-900006"
+   },
+   "obs": {
+    "found": false
+   }
+  },
+  {
+   "tool": "lookup_order",
+   "args": {
+    "order_id": "ORD-900007"
+   },
+   "obs": {
+    "found": false
+   }
+  }
+ ],
+ "steps": [
+  {
+   "step": 1,
+   "type": "tool",
+   "tool": "lookup_order",
+   "args": {
+    "order_id": "ORD-900000"
+   },
+   "observation": {
+    "found": false
+   },
+   "tokens": 140
+  },
+  {
+   "step": 2,
+   "type": "tool",
+   "tool": "lookup_order",
+   "args": {
+    "order_id": "ORD-900001"
+   },
+   "observation": {
+    "found": false
+   },
+   "tokens": 152
+  },
+  {
+   "step": 3,
+   "type": "tool",
+   "tool": "lookup_order",
+   "args": {
+    "order_id": "ORD-900002"
+   },
+   "observation": {
+    "found": false
+   },
+   "tokens": 164
+  },
+  {
+   "step": 4,
+   "type": "tool",
+   "tool": "lookup_order",
+   "args": {
+    "order_id": "ORD-900003"
+   },
+   "observation": {
+    "found": false
+   },
+   "tokens": 177
+  },
+  {
+   "step": 5,
+   "type": "tool",
+   "tool": "lookup_order",
+   "args": {
+    "order_id": "ORD-900004"
+   },
+   "observation": {
+    "found": false
+   },
+   "tokens": 189
+  },
+  {
+   "step": 6,
+   "type": "tool",
+   "tool": "lookup_order",
+   "args": {
+    "order_id": "ORD-900005"
+   },
+   "observation": {
+    "found": false
+   },
+   "tokens": 202
+  },
+  {
+   "step": 7,
+   "type": "tool",
+   "tool": "lookup_order",
+   "args": {
+    "order_id": "ORD-900006"
+   },
+   "observation": {
+    "found": false
+   },
+   "tokens": 214
+  },
+  {
+   "step": 8,
+   "type": "tool",
+   "tool": "lookup_order",
+   "args": {
+    "order_id": "ORD-900007"
+   },
+   "observation": {
+    "found": false
+   },
+   "tokens": 227
+  },
+  {
+   "step": 9,
+   "type": "fallback",
+   "status": "FALLBACK_MAX_ITERATIONS",
+   "answer": "I could not finish this automatically (stopped after 8 LLM calls without an answer); your case has been handed to a human agent."
+  }
+ ],
+ "llm_calls": 8,
+ "tokens_used": 1465,
+ "clock": 1.5999999999999999,
+ "complete": true
+}

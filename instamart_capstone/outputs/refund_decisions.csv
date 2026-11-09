@@ -1,0 +1,165 @@
+ticket_id,decision,reason,category,refund_amount,case_id
+T0024,HUMAN_REVIEW,Fraud: marked high priority and sent to the security team.,Fraud Report,0.0,ESC-0001
+T0073,HUMAN_REVIEW,Billing dispute: verify charges against the order before refunding.,Payment Issue,0.0,ESC-0002
+T0095,NO_REFUND,"Technical issue, not a refund request; routed to app support.",App Crash,0.0,
+T0159,REJECT_INPUT,empty_or_whitespace,,0.0,
+T0080,HUMAN_REVIEW,Fraud: marked high priority and sent to the security team.,Fraud Report,0.0,ESC-0003
+T0124,HUMAN_REVIEW,Fraud: marked high priority and sent to the security team.,Fraud Report,0.0,ESC-0004
+T0061,HUMAN_REVIEW,Billing dispute: verify charges against the order before refunding.,Payment Issue,0.0,ESC-0005
+T0118,NO_REFUND,Delivered in 16 min (<= 45); no late-delivery refund.,Delivery Delay,0.0,
+T0037,HUMAN_REVIEW,Billing dispute: verify charges against the order before refunding.,Payment Issue,0.0,ESC-0006
+T0002,NO_REFUND,Delivered in 15 min (<= 45); no late-delivery refund.,Delivery Delay,0.0,
+T0163,REJECT_INPUT,too_long,,0.0,
+T0031,NO_REFUND,"Technical issue, not a refund request; routed to app support.",App Crash,0.0,
+T0047,NO_REFUND,"Technical issue, not a refund request; routed to app support.",App Crash,0.0,
+T0063,NO_REFUND,"Technical issue, not a refund request; routed to app support.",App Crash,0.0,
+T0121,HUMAN_REVIEW,Billing dispute: verify charges against the order before refunding.,Payment Issue,0.0,ESC-0007
+T0139,NO_REFUND,"Technical issue, not a refund request; routed to app support.",App Crash,0.0,
+T0115,NO_REFUND,"Technical issue, not a refund request; routed to app support.",App Crash,0.0,
+T0123,NO_REFUND,"Technical issue, not a refund request; routed to app support.",App Crash,0.0,
+T0116,HUMAN_REVIEW,Fraud: marked high priority and sent to the security team.,Fraud Report,0.0,ESC-0008
+T0136,HUMAN_REVIEW,Fraud: marked high priority and sent to the security team.,Fraud Report,0.0,ESC-0009
+T0008,HUMAN_REVIEW,Fraud: marked high priority and sent to the security team.,Fraud Report,0.0,ESC-0010
+T0102,NO_REFUND,Delivered in 27 min (<= 45); no late-delivery refund.,Delivery Delay,0.0,
+T0072,HUMAN_REVIEW,Fraud: marked high priority and sent to the security team.,Fraud Report,0.0,ESC-0011
+T0101,HUMAN_REVIEW,Billing dispute: verify charges against the order before refunding.,Payment Issue,0.0,ESC-0012
+T0059,NO_REFUND,"Technical issue, not a refund request; routed to app support.",App Crash,0.0,
+T0049,HUMAN_REVIEW,Billing dispute: verify charges against the order before refunding.,Payment Issue,0.0,ESC-0013
+T0153,HUMAN_REVIEW,Billing dispute: verify charges against the order before refunding.,Payment Issue,0.0,ESC-0014
+T0050,NO_REFUND,Delivered in 27 min (<= 45); no late-delivery refund.,Delivery Delay,0.0,
+T0147,NO_REFUND,"Technical issue, not a refund request; routed to app support.",App Crash,0.0,
+T0074,NO_REFUND,Delivered in 22 min (<= 45); no late-delivery refund.,Delivery Delay,0.0,
+T0156,HUMAN_REVIEW,Fraud: marked high priority and sent to the security team.,Fraud Report,0.0,ESC-0015
+T0145,HUMAN_REVIEW,Billing dispute: verify charges against the order before refunding.,Payment Issue,0.0,ESC-0016
+T0053,HUMAN_REVIEW,Billing dispute: verify charges against the order before refunding.,Payment Issue,0.0,ESC-0017
+T0134,NO_REFUND,Order status is 'cancelled'; only completed orders are refundable.,Delivery Delay,0.0,
+T0039,NO_REFUND,"Technical issue, not a refund request; routed to app support.",App Crash,0.0,
+T0016,HUMAN_REVIEW,Fraud: marked high priority and sent to the security team.,Fraud Report,0.0,ESC-0018
+T0055,NO_REFUND,"Technical issue, not a refund request; routed to app support.",App Crash,0.0,
+T0130,NO_REFUND,Delivered in 20 min (<= 45); no late-delivery refund.,Delivery Delay,0.0,
+T0099,NO_REFUND,"Technical issue, not a refund request; routed to app support.",App Crash,0.0,
+T0062,AUTO_APPROVE,Delivered in 46 min (> 45): full refund of INR 190.00.,Delivery Delay,190.0,
+T0013,HUMAN_REVIEW,Billing dispute: verify charges against the order before refunding.,Payment Issue,0.0,ESC-0019
+T0137,HUMAN_REVIEW,Billing dispute: verify charges against the order before refunding.,Payment Issue,0.0,ESC-0020
+T0152,HUMAN_REVIEW,Fraud: marked high priority and sent to the security team.,Fraud Report,0.0,ESC-0021
+T0144,HUMAN_REVIEW,Fraud: marked high priority and sent to the security team.,Fraud Report,0.0,ESC-0022
+T0094,NO_REFUND,Delivered in 32 min (<= 45); no late-delivery refund.,Delivery Delay,0.0,
+T0021,HUMAN_REVIEW,Billing dispute: verify charges against the order before refunding.,Payment Issue,0.0,ESC-0023
+T0077,HUMAN_REVIEW,Billing dispute: verify charges against the order before refunding.,Payment Issue,0.0,ESC-0024
+T0036,HUMAN_REVIEW,Fraud: marked high priority and sent to the security team.,Fraud Report,0.0,ESC-0025
+T0113,HUMAN_REVIEW,Billing dispute: verify charges against the order before refunding.,Payment Issue,0.0,ESC-0026
+T0060,HUMAN_REVIEW,Fraud: marked high priority and sent to the security team.,Fraud Report,0.0,ESC-0027
+T0043,NO_REFUND,"Technical issue, not a refund request; routed to app support.",App Crash,0.0,
+T0048,HUMAN_REVIEW,Fraud: marked high priority and sent to the security team.,Fraud Report,0.0,ESC-0028
+T0154,NO_REFUND,Delivered in 17 min (<= 45); no late-delivery refund.,Delivery Delay,0.0,
+T0125,HUMAN_REVIEW,Billing dispute: verify charges against the order before refunding.,Payment Issue,0.0,ESC-0029
+T0146,NO_REFUND,Delivered in 31 min (<= 45); no late-delivery refund.,Delivery Delay,0.0,
+T0107,NO_REFUND,"Technical issue, not a refund request; routed to app support.",App Crash,0.0,
+T0011,NO_REFUND,"Technical issue, not a refund request; routed to app support.",App Crash,0.0,
+T0017,HUMAN_REVIEW,Billing dispute: verify charges against the order before refunding.,Payment Issue,0.0,ESC-0030
+T0111,NO_REFUND,"Technical issue, not a refund request; routed to app support.",App Crash,0.0,
+T0041,HUMAN_REVIEW,Billing dispute: verify charges against the order before refunding.,Payment Issue,0.0,ESC-0031
+T0120,HUMAN_REVIEW,Fraud: marked high priority and sent to the security team.,Fraud Report,0.0,ESC-0032
+T0122,NO_REFUND,Delivered in 30 min (<= 45); no late-delivery refund.,Delivery Delay,0.0,
+T0001,HUMAN_REVIEW,Billing dispute: verify charges against the order before refunding.,Payment Issue,0.0,ESC-0033
+T0064,HUMAN_REVIEW,Fraud: marked high priority and sent to the security team.,Fraud Report,0.0,ESC-0034
+T0092,HUMAN_REVIEW,Fraud: marked high priority and sent to the security team.,Fraud Report,0.0,ESC-0035
+T0038,NO_REFUND,Delivered in 32 min (<= 45); no late-delivery refund.,Delivery Delay,0.0,
+T0155,NO_REFUND,"Technical issue, not a refund request; routed to app support.",App Crash,0.0,
+T0104,HUMAN_REVIEW,Fraud: marked high priority and sent to the security team.,Fraud Report,0.0,ESC-0036
+T0012,HUMAN_REVIEW,Fraud: marked high priority and sent to the security team.,Fraud Report,0.0,ESC-0037
+T0084,HUMAN_REVIEW,Fraud: marked high priority and sent to the security team.,Fraud Report,0.0,ESC-0038
+T0051,NO_REFUND,"Technical issue, not a refund request; routed to app support.",App Crash,0.0,
+T0143,NO_REFUND,"Technical issue, not a refund request; routed to app support.",App Crash,0.0,
+T0035,NO_REFUND,"Technical issue, not a refund request; routed to app support.",App Crash,0.0,
+T0028,HUMAN_REVIEW,Fraud: marked high priority and sent to the security team.,Fraud Report,0.0,ESC-0039
+T0100,HUMAN_REVIEW,Fraud: marked high priority and sent to the security team.,Fraud Report,0.0,ESC-0040
+T0022,NO_REFUND,Order status is 'cancelled'; only completed orders are refundable.,Delivery Delay,0.0,
+T0082,AUTO_APPROVE,Delivered in 55 min (> 45): full refund of INR 57.60.,Delivery Delay,57.6,
+T0127,NO_REFUND,"Technical issue, not a refund request; routed to app support.",App Crash,0.0,
+T0162,REJECT_INPUT,too_long,,0.0,
+T0109,HUMAN_REVIEW,Billing dispute: verify charges against the order before refunding.,Payment Issue,0.0,ESC-0041
+T0046,NO_REFUND,Delivered in 23 min (<= 45); no late-delivery refund.,Delivery Delay,0.0,
+T0081,HUMAN_REVIEW,Billing dispute: verify charges against the order before refunding.,Payment Issue,0.0,ESC-0042
+T0007,NO_REFUND,"Technical issue, not a refund request; routed to app support.",App Crash,0.0,
+T0068,HUMAN_REVIEW,Fraud: marked high priority and sent to the security team.,Fraud Report,0.0,ESC-0043
+T0085,HUMAN_REVIEW,Billing dispute: verify charges against the order before refunding.,Payment Issue,0.0,ESC-0044
+T0075,NO_REFUND,"Technical issue, not a refund request; routed to app support.",App Crash,0.0,
+T0052,HUMAN_REVIEW,Fraud: marked high priority and sent to the security team.,Fraud Report,0.0,ESC-0045
+T0066,NO_REFUND,Delivered in 15 min (<= 45); no late-delivery refund.,Delivery Delay,0.0,
+T0151,NO_REFUND,"Technical issue, not a refund request; routed to app support.",App Crash,0.0,
+T0131,NO_REFUND,"Technical issue, not a refund request; routed to app support.",App Crash,0.0,
+T0006,AUTO_APPROVE,Delivered in 66 min (> 45): full refund of INR 57.00.,Delivery Delay,57.0,
+T0135,NO_REFUND,"Technical issue, not a refund request; routed to app support.",App Crash,0.0,
+T0079,NO_REFUND,"Technical issue, not a refund request; routed to app support.",App Crash,0.0,
+T0040,HUMAN_REVIEW,Fraud: marked high priority and sent to the security team.,Fraud Report,0.0,ESC-0046
+T0093,HUMAN_REVIEW,Billing dispute: verify charges against the order before refunding.,Payment Issue,0.0,ESC-0047
+T0089,HUMAN_REVIEW,Billing dispute: verify charges against the order before refunding.,Payment Issue,0.0,ESC-0048
+T0034,NO_REFUND,Delivered in 29 min (<= 45); no late-delivery refund.,Delivery Delay,0.0,
+T0033,HUMAN_REVIEW,Billing dispute: verify charges against the order before refunding.,Payment Issue,0.0,ESC-0049
+T0160,REJECT_INPUT,empty_or_whitespace,,0.0,
+T0087,NO_REFUND,"Technical issue, not a refund request; routed to app support.",App Crash,0.0,
+T0009,HUMAN_REVIEW,Billing dispute: verify charges against the order before refunding.,Payment Issue,0.0,ESC-0050
+T0108,HUMAN_REVIEW,Fraud: marked high priority and sent to the security team.,Fraud Report,0.0,ESC-0051
+T0054,NO_REFUND,Delivered in 9 min (<= 45); no late-delivery refund.,Delivery Delay,0.0,
+T0025,HUMAN_REVIEW,Billing dispute: verify charges against the order before refunding.,Payment Issue,0.0,ESC-0052
+T0004,HUMAN_REVIEW,Fraud: marked high priority and sent to the security team.,Fraud Report,0.0,ESC-0053
+T0148,HUMAN_REVIEW,Fraud: marked high priority and sent to the security team.,Fraud Report,0.0,ESC-0054
+T0088,HUMAN_REVIEW,Fraud: marked high priority and sent to the security team.,Fraud Report,0.0,ESC-0055
+T0030,NO_REFUND,Delivered in 8 min (<= 45); no late-delivery refund.,Delivery Delay,0.0,
+T0067,NO_REFUND,"Technical issue, not a refund request; routed to app support.",App Crash,0.0,
+T0029,HUMAN_REVIEW,Billing dispute: verify charges against the order before refunding.,Payment Issue,0.0,ESC-0056
+T0129,HUMAN_REVIEW,Billing dispute: verify charges against the order before refunding.,Payment Issue,0.0,ESC-0057
+T0105,HUMAN_REVIEW,Billing dispute: verify charges against the order before refunding.,Payment Issue,0.0,ESC-0058
+T0045,HUMAN_REVIEW,Billing dispute: verify charges against the order before refunding.,Payment Issue,0.0,ESC-0059
+T0069,HUMAN_REVIEW,Billing dispute: verify charges against the order before refunding.,Payment Issue,0.0,ESC-0060
+T0010,NO_REFUND,Delivered in 29 min (<= 45); no late-delivery refund.,Delivery Delay,0.0,
+T0023,NO_REFUND,"Technical issue, not a refund request; routed to app support.",App Crash,0.0,
+T0106,NO_REFUND,Delivered in 35 min (<= 45); no late-delivery refund.,Delivery Delay,0.0,
+T0015,NO_REFUND,"Technical issue, not a refund request; routed to app support.",App Crash,0.0,
+T0091,NO_REFUND,"Technical issue, not a refund request; routed to app support.",App Crash,0.0,
+T0126,NO_REFUND,Delivered in 16 min (<= 45); no late-delivery refund.,Delivery Delay,0.0,
+T0096,HUMAN_REVIEW,Fraud: marked high priority and sent to the security team.,Fraud Report,0.0,ESC-0061
+T0149,HUMAN_REVIEW,Billing dispute: verify charges against the order before refunding.,Payment Issue,0.0,ESC-0062
+T0070,NO_REFUND,Delivered in 10 min (<= 45); no late-delivery refund.,Delivery Delay,0.0,
+T0026,NO_REFUND,Delivered in 37 min (<= 45); no late-delivery refund.,Delivery Delay,0.0,
+T0097,HUMAN_REVIEW,Billing dispute: verify charges against the order before refunding.,Payment Issue,0.0,ESC-0063
+T0132,HUMAN_REVIEW,Fraud: marked high priority and sent to the security team.,Fraud Report,0.0,ESC-0064
+T0027,NO_REFUND,"Technical issue, not a refund request; routed to app support.",App Crash,0.0,
+T0119,NO_REFUND,"Technical issue, not a refund request; routed to app support.",App Crash,0.0,
+T0157,REJECT_INPUT,empty_or_whitespace,,0.0,
+T0058,NO_REFUND,Delivered in 11 min (<= 45); no late-delivery refund.,Delivery Delay,0.0,
+T0110,AUTO_APPROVE,Delivered in 73 min (> 45): full refund of INR 19.00.,Delivery Delay,19.0,
+T0018,NO_REFUND,Delivered in 19 min (<= 45); no late-delivery refund.,Delivery Delay,0.0,
+T0032,HUMAN_REVIEW,Fraud: marked high priority and sent to the security team.,Fraud Report,0.0,ESC-0065
+T0003,NO_REFUND,"Technical issue, not a refund request; routed to app support.",App Crash,0.0,
+T0042,NO_REFUND,Order status is 'cancelled'; only completed orders are refundable.,Delivery Delay,0.0,
+T0056,HUMAN_REVIEW,Fraud: marked high priority and sent to the security team.,Fraud Report,0.0,ESC-0066
+T0114,NO_REFUND,Delivered in 23 min (<= 45); no late-delivery refund.,Delivery Delay,0.0,
+T0083,NO_REFUND,"Technical issue, not a refund request; routed to app support.",App Crash,0.0,
+T0138,NO_REFUND,Delivered in 25 min (<= 45); no late-delivery refund.,Delivery Delay,0.0,
+T0057,HUMAN_REVIEW,Billing dispute: verify charges against the order before refunding.,Payment Issue,0.0,ESC-0067
+T0076,HUMAN_REVIEW,Fraud: marked high priority and sent to the security team.,Fraud Report,0.0,ESC-0068
+T0019,NO_REFUND,"Technical issue, not a refund request; routed to app support.",App Crash,0.0,
+T0103,NO_REFUND,"Technical issue, not a refund request; routed to app support.",App Crash,0.0,
+T0164,REJECT_INPUT,too_long,,0.0,
+T0090,NO_REFUND,Delivered in 24 min (<= 45); no late-delivery refund.,Delivery Delay,0.0,
+T0112,HUMAN_REVIEW,Fraud: marked high priority and sent to the security team.,Fraud Report,0.0,ESC-0069
+T0133,HUMAN_REVIEW,Billing dispute: verify charges against the order before refunding.,Payment Issue,0.0,ESC-0070
+T0014,NO_REFUND,Delivered in 25 min (<= 45); no late-delivery refund.,Delivery Delay,0.0,
+T0158,REJECT_INPUT,empty_or_whitespace,,0.0,
+T0020,HUMAN_REVIEW,Fraud: marked high priority and sent to the security team.,Fraud Report,0.0,ESC-0071
+T0142,NO_REFUND,Delivered in 29 min (<= 45); no late-delivery refund.,Delivery Delay,0.0,
+T0086,NO_REFUND,Delivered in 26 min (<= 45); no late-delivery refund.,Delivery Delay,0.0,
+T0141,HUMAN_REVIEW,Billing dispute: verify charges against the order before refunding.,Payment Issue,0.0,ESC-0072
+T0044,HUMAN_REVIEW,Fraud: marked high priority and sent to the security team.,Fraud Report,0.0,ESC-0073
+T0117,HUMAN_REVIEW,Billing dispute: verify charges against the order before refunding.,Payment Issue,0.0,ESC-0074
+T0078,NO_REFUND,Delivered in 27 min (<= 45); no late-delivery refund.,Delivery Delay,0.0,
+T0140,HUMAN_REVIEW,Fraud: marked high priority and sent to the security team.,Fraud Report,0.0,ESC-0075
+T0071,NO_REFUND,"Technical issue, not a refund request; routed to app support.",App Crash,0.0,
+T0161,REJECT_INPUT,too_long,,0.0,
+T0150,NO_REFUND,Delivered in 26 min (<= 45); no late-delivery refund.,Delivery Delay,0.0,
+T0065,HUMAN_REVIEW,Billing dispute: verify charges against the order before refunding.,Payment Issue,0.0,ESC-0076
+T0128,HUMAN_REVIEW,Fraud: marked high priority and sent to the security team.,Fraud Report,0.0,ESC-0077
+T0005,HUMAN_REVIEW,Billing dispute: verify charges against the order before refunding.,Payment Issue,0.0,ESC-0078
+T0098,NO_REFUND,Delivered in 25 min (<= 45); no late-delivery refund.,Delivery Delay,0.0,

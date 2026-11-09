@@ -1,0 +1,3 @@
+model,accuracy,precision,recall,f1,best_params
+logistic_regression,0.728,0.644,0.652,0.648,{'model__C': 100}
+random_forest,0.72,0.63,0.652,0.641,"{'model__max_depth': 8, 'model__min_samples_leaf': 10}"

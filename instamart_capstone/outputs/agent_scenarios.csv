@@ -1,0 +1,8 @@
+scenario,title,expected_status,expected_amount,status,refund_amount,llm_calls,tokens_used,match
+S1,"Late delivery, amount <= INR 1000 -> auto refund",REFUND_ISSUED,128.25,REFUND_ISSUED,128.25,5,868,True
+S2,"Late delivery, amount > INR 1000 -> human approval",ESCALATED,0.0,ESCALATED,0.0,5,895,True
+S3,On-time delivery -> no refund,NO_REFUND,0.0,NO_REFUND,0.0,4,645,True
+S4,Cancelled order -> no refund,NO_REFUND,0.0,NO_REFUND,0.0,4,652,True
+S5,Fraud report -> security team,ESCALATED,0.0,ESCALATED,0.0,2,266,True
+S6,Unknown order ID -> human verifies,ESCALATED,0.0,ESCALATED,0.0,3,377,True
+S7,Customer lists 12 invalid order IDs -> agent loops until the iteration cap,FALLBACK_MAX_ITERATIONS,0.0,FALLBACK_MAX_ITERATIONS,0.0,8,1465,True

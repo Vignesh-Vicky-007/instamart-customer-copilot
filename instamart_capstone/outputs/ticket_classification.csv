@@ -1,0 +1,313 @@
+ticket_id,mode,category,priority,action,expected,correct
+T0024,few_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0073,few_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0095,few_shot,App Crash,Low,Route to app support,App Crash,True
+T0080,few_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0124,few_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0061,few_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0118,few_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0037,few_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0002,few_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0031,few_shot,App Crash,Low,Route to app support,App Crash,True
+T0047,few_shot,App Crash,Low,Route to app support,App Crash,True
+T0063,few_shot,App Crash,Low,Route to app support,App Crash,True
+T0121,few_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0139,few_shot,App Crash,Low,Route to app support,App Crash,True
+T0115,few_shot,App Crash,Low,Route to app support,App Crash,True
+T0123,few_shot,App Crash,Low,Route to app support,App Crash,True
+T0116,few_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0136,few_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0008,few_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0102,few_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0072,few_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0101,few_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0059,few_shot,App Crash,Low,Route to app support,App Crash,True
+T0049,few_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0153,few_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0050,few_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0147,few_shot,App Crash,Low,Route to app support,App Crash,True
+T0074,few_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0156,few_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0145,few_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0053,few_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0134,few_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0039,few_shot,App Crash,Low,Route to app support,App Crash,True
+T0016,few_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0055,few_shot,App Crash,Low,Route to app support,App Crash,True
+T0130,few_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0099,few_shot,App Crash,Low,Route to app support,App Crash,True
+T0062,few_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0013,few_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0137,few_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0152,few_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0144,few_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0094,few_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0021,few_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0077,few_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0036,few_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0113,few_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0060,few_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0043,few_shot,App Crash,Low,Route to app support,App Crash,True
+T0048,few_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0154,few_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0125,few_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0146,few_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0107,few_shot,App Crash,Low,Route to app support,App Crash,True
+T0011,few_shot,App Crash,Low,Route to app support,App Crash,True
+T0017,few_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0111,few_shot,App Crash,Low,Route to app support,App Crash,True
+T0041,few_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0120,few_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0122,few_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0001,few_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0064,few_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0092,few_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0038,few_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0155,few_shot,App Crash,Low,Route to app support,App Crash,True
+T0104,few_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0012,few_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0084,few_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0051,few_shot,App Crash,Low,Route to app support,App Crash,True
+T0143,few_shot,App Crash,Low,Route to app support,App Crash,True
+T0035,few_shot,App Crash,Low,Route to app support,App Crash,True
+T0028,few_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0100,few_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0022,few_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0082,few_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0127,few_shot,App Crash,Low,Route to app support,App Crash,True
+T0109,few_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0046,few_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0081,few_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0007,few_shot,App Crash,Low,Route to app support,App Crash,True
+T0068,few_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0085,few_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0075,few_shot,App Crash,Low,Route to app support,App Crash,True
+T0052,few_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0066,few_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0151,few_shot,App Crash,Low,Route to app support,App Crash,True
+T0131,few_shot,App Crash,Low,Route to app support,App Crash,True
+T0006,few_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0135,few_shot,App Crash,Low,Route to app support,App Crash,True
+T0079,few_shot,App Crash,Low,Route to app support,App Crash,True
+T0040,few_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0093,few_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0089,few_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0034,few_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0033,few_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0087,few_shot,App Crash,Low,Route to app support,App Crash,True
+T0009,few_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0108,few_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0054,few_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0025,few_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0004,few_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0148,few_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0088,few_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0030,few_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0067,few_shot,App Crash,Low,Route to app support,App Crash,True
+T0029,few_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0129,few_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0105,few_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0045,few_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0069,few_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0010,few_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0023,few_shot,App Crash,Low,Route to app support,App Crash,True
+T0106,few_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0015,few_shot,App Crash,Low,Route to app support,App Crash,True
+T0091,few_shot,App Crash,Low,Route to app support,App Crash,True
+T0126,few_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0096,few_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0149,few_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0070,few_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0026,few_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0097,few_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0132,few_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0027,few_shot,App Crash,Low,Route to app support,App Crash,True
+T0119,few_shot,App Crash,Low,Route to app support,App Crash,True
+T0058,few_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0110,few_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0018,few_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0032,few_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0003,few_shot,App Crash,Low,Route to app support,App Crash,True
+T0042,few_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0056,few_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0114,few_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0083,few_shot,App Crash,Low,Route to app support,App Crash,True
+T0138,few_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0057,few_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0076,few_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0019,few_shot,App Crash,Low,Route to app support,App Crash,True
+T0103,few_shot,App Crash,Low,Route to app support,App Crash,True
+T0090,few_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0112,few_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0133,few_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0014,few_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0020,few_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0142,few_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0086,few_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0141,few_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0044,few_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0117,few_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0078,few_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0140,few_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0071,few_shot,App Crash,Low,Route to app support,App Crash,True
+T0150,few_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0065,few_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0128,few_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0005,few_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0098,few_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0024,zero_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0073,zero_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0095,zero_shot,App Crash,Low,Route to app support,App Crash,True
+T0080,zero_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0124,zero_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0061,zero_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0118,zero_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0037,zero_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0002,zero_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0031,zero_shot,App Crash,Low,Route to app support,App Crash,True
+T0047,zero_shot,App Crash,Low,Route to app support,App Crash,True
+T0063,zero_shot,App Crash,Low,Route to app support,App Crash,True
+T0121,zero_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0139,zero_shot,App Crash,Low,Route to app support,App Crash,True
+T0115,zero_shot,App Crash,Low,Route to app support,App Crash,True
+T0123,zero_shot,App Crash,Low,Route to app support,App Crash,True
+T0116,zero_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0136,zero_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0008,zero_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0102,zero_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0072,zero_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0101,zero_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0059,zero_shot,App Crash,Low,Route to app support,App Crash,True
+T0049,zero_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0153,zero_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0050,zero_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0147,zero_shot,App Crash,Low,Route to app support,App Crash,True
+T0074,zero_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0156,zero_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0145,zero_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0053,zero_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0134,zero_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0039,zero_shot,App Crash,Low,Route to app support,App Crash,True
+T0016,zero_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0055,zero_shot,App Crash,Low,Route to app support,App Crash,True
+T0130,zero_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0099,zero_shot,App Crash,Low,Route to app support,App Crash,True
+T0062,zero_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0013,zero_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0137,zero_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0152,zero_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0144,zero_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0094,zero_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0021,zero_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0077,zero_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0036,zero_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0113,zero_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0060,zero_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0043,zero_shot,App Crash,Low,Route to app support,App Crash,True
+T0048,zero_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0154,zero_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0125,zero_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0146,zero_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0107,zero_shot,App Crash,Low,Route to app support,App Crash,True
+T0011,zero_shot,App Crash,Low,Route to app support,App Crash,True
+T0017,zero_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0111,zero_shot,App Crash,Low,Route to app support,App Crash,True
+T0041,zero_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0120,zero_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0122,zero_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0001,zero_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0064,zero_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0092,zero_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0038,zero_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0155,zero_shot,App Crash,Low,Route to app support,App Crash,True
+T0104,zero_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0012,zero_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0084,zero_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0051,zero_shot,App Crash,Low,Route to app support,App Crash,True
+T0143,zero_shot,App Crash,Low,Route to app support,App Crash,True
+T0035,zero_shot,App Crash,Low,Route to app support,App Crash,True
+T0028,zero_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0100,zero_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0022,zero_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0082,zero_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0127,zero_shot,App Crash,Low,Route to app support,App Crash,True
+T0109,zero_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0046,zero_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0081,zero_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0007,zero_shot,App Crash,Low,Route to app support,App Crash,True
+T0068,zero_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0085,zero_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0075,zero_shot,App Crash,Low,Route to app support,App Crash,True
+T0052,zero_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0066,zero_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0151,zero_shot,App Crash,Low,Route to app support,App Crash,True
+T0131,zero_shot,App Crash,Low,Route to app support,App Crash,True
+T0006,zero_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0135,zero_shot,App Crash,Low,Route to app support,App Crash,True
+T0079,zero_shot,App Crash,Low,Route to app support,App Crash,True
+T0040,zero_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0093,zero_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0089,zero_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0034,zero_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0033,zero_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0087,zero_shot,App Crash,Low,Route to app support,App Crash,True
+T0009,zero_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0108,zero_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0054,zero_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0025,zero_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0004,zero_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0148,zero_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0088,zero_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0030,zero_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0067,zero_shot,App Crash,Low,Route to app support,App Crash,True
+T0029,zero_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0129,zero_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0105,zero_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0045,zero_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0069,zero_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0010,zero_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0023,zero_shot,App Crash,Low,Route to app support,App Crash,True
+T0106,zero_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0015,zero_shot,App Crash,Low,Route to app support,App Crash,True
+T0091,zero_shot,App Crash,Low,Route to app support,App Crash,True
+T0126,zero_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0096,zero_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0149,zero_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0070,zero_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0026,zero_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0097,zero_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0132,zero_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0027,zero_shot,App Crash,Low,Route to app support,App Crash,True
+T0119,zero_shot,App Crash,Low,Route to app support,App Crash,True
+T0058,zero_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0110,zero_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0018,zero_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0032,zero_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0003,zero_shot,App Crash,Low,Route to app support,App Crash,True
+T0042,zero_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0056,zero_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0114,zero_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0083,zero_shot,App Crash,Low,Route to app support,App Crash,True
+T0138,zero_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0057,zero_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0076,zero_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0019,zero_shot,App Crash,Low,Route to app support,App Crash,True
+T0103,zero_shot,App Crash,Low,Route to app support,App Crash,True
+T0090,zero_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0112,zero_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0133,zero_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0014,zero_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0020,zero_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0142,zero_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0086,zero_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0141,zero_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0044,zero_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0117,zero_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0078,zero_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0140,zero_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0071,zero_shot,App Crash,Low,Route to app support,App Crash,True
+T0150,zero_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True
+T0065,zero_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0128,zero_shot,Fraud Report,High,Escalate to the security team within 2 hours,Fraud Report,True
+T0005,zero_shot,Payment Issue,Medium,Verify the charge against the order,Payment Issue,True
+T0098,zero_shot,Delivery Delay,Medium,Check delivery status,Delivery Delay,True

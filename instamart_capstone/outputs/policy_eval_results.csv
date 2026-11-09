@@ -1,0 +1,15 @@
+question,doc_ok,fact_ok
+What delivery time makes a completed order eligible for a full refund?,True,True
+Who must approve a refund above INR 1000?,True,True
+How many days do I have to raise a refund request?,True,True
+What is the delivery fee on small orders?,True,True
+On orders of what value is delivery free?,True,True
+Why does the electronics delivery need a one time password?,True,True
+Is cash on delivery available for a large order?,True,True
+How soon is money returned when a payment fails but is deducted?,True,True
+Can wallet balance be refunded as cash?,True,True
+When are delivery addresses deleted from active systems?,True,True
+How fast must a fraud ticket reach the security team?,True,True
+After how many steps must an automated assistant hand over to a human?,True,True
+What is the favourite colour of the company mascot?,True,True
+Who won the cricket world cup final?,True,True

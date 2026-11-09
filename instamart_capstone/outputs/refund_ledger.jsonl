@@ -1,0 +1,8 @@
+{"scenario_id": "S1", "action": "ISSUED", "order_id": "ORD-100048", "amount": 128.25}
+{"scenario_id": "S2", "action": "ESCALATED", "order_id": "ORD-100145", "reason": "Refund INR 1999.00 delivered in 54 min (> 45); above INR 1000, needs human approval"}
+{"scenario_id": "S5", "action": "ESCALATED", "order_id": null, "reason": "Fraud report: security team review (high priority)"}
+{"scenario_id": "S6", "action": "ESCALATED", "order_id": null, "reason": "None of the order IDs could be found"}
+{"scenario_id": "S7", "action": "ESCALATED", "order_id": null, "reason": "FALLBACK_MAX_ITERATIONS: stopped after 8 LLM calls without an answer"}
+{"scenario_id": "DEMO_TOKEN_LIMIT", "action": "ESCALATED", "order_id": null, "reason": "FALLBACK_TOKEN_LIMIT: token budget exceeded (434 > 400)"}
+{"scenario_id": "DEMO_TIMEOUT", "action": "ESCALATED", "order_id": null, "reason": "FALLBACK_TIMEOUT: timeout after 25.2s (> 20.0s)"}
+{"scenario_id": "DEMO_CRASH_RESUME", "action": "ISSUED", "order_id": "ORD-100048", "amount": 128.25}

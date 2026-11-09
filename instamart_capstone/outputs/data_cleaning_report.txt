@@ -1,0 +1,31 @@
+DATA-CLEANING REPORT (before vs after)
+                                        before  after  fixed
+customer rows                             1200   1200  False
+order rows                               13084  12309   True
+ticket rows                                164    164  False
+exact duplicate order rows                 119      0   True
+repeated order_id rows                     775      0   True
+distinct city spellings                     24      6   True
+distinct gender spellings                   11      3   True
+blank gender                                30      0   True
+impossible/blank age (outside 10-100)       67      0   True
+non-numeric order_amount                   120      0   True
+negative delivery_minutes                  106      0   True
+completed orders without delivery time     674      0   True
+pending rows                               656      0   True
+blank customer/order ids                     0      0  False
+
+Outlier analysis on RAW orders (IQR method)
+order_amount: IQR fence [-286.6, 647.2] -> 1034 statistical outliers (8.0%), max=3998
+delivery_minutes: IQR fence [1.0, 49.0] -> 976 statistical outliers (9.3%), max=75
+Decision: high order amounts are real (electronics at INR 1,299-1,999 x quantity) so they are KEPT; only impossible values (age -4/0/150/999, negative delivery minutes, non-numeric amounts) are corrected.
+
+CLEANING RULES
+customers/orders: rows with a blank customer_id / order_id / product_id are dropped (cannot be joined).
+customers: city -> strip + lowercase, mapped to 6 canonical cities; gender (male/M/FEMALE/f/blank...) -> Male / Female / Unknown;
+  age blank or outside 10-100 (outlier, e.g. -4, 0, 150, 999) -> NaN, then filled with the median age of the customer's city.
+orders: exact duplicate rows dropped; if an order_id appears more than once (pending copy + final row) keep the LATEST order_ts;
+  order_amount 'N/A'/'error' -> imputed as product price * quantity * (1 - discount_pct/100);
+  negative delivery_minutes -> NaN; blank/NaN delivery of COMPLETED orders -> median delivery of that product category;
+  delivery_minutes of cancelled orders stays empty (never delivered).
+tickets: text stripped; empty/whitespace and over-long tickets are kept here and blocked later by the Part C guardrails.

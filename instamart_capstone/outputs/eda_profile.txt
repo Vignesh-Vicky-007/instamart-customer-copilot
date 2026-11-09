@@ -1,0 +1,121 @@
+=== customers: shape=(1200, 5) ===
+Data types:
+customer_id    str
+city           str
+signup_date    str
+age            str
+gender         str
+dtype: object
+Blank/null counts:
+customer_id     0
+city            0
+signup_date     0
+age            61
+gender         30
+dtype: int64
+
+=== orders: shape=(13084, 9) ===
+Data types:
+order_id              str
+customer_id           str
+product_id            str
+quantity            int64
+order_ts              str
+status                str
+discount_pct        int64
+order_amount          str
+delivery_minutes      str
+dtype: object
+Blank/null counts:
+order_id               0
+customer_id            0
+product_id             0
+quantity               0
+order_ts               0
+status                 0
+discount_pct           0
+order_amount           0
+delivery_minutes    2541
+dtype: int64
+
+=== tickets: shape=(164, 5) ===
+Data types:
+ticket_id        str
+customer_id      str
+order_id         str
+text             str
+true_category    str
+dtype: object
+Blank/null counts:
+ticket_id        0
+customer_id      0
+order_id         8
+text             4
+true_category    0
+dtype: int64
+
+=== customers AFTER clean: shape=(1200, 5) ===
+Data types:
+customer_id      str
+city             str
+signup_date      str
+age            int64
+gender           str
+dtype: object
+Blank/null counts:
+customer_id    0
+city           0
+signup_date    0
+age            0
+gender         0
+dtype: int64
+
+=== orders AFTER clean: shape=(12309, 9) ===
+Data types:
+order_id                       str
+customer_id                    str
+product_id                     str
+quantity                     int64
+order_ts            datetime64[us]
+status                         str
+discount_pct                 int64
+order_amount               float64
+delivery_minutes             Int64
+dtype: object
+Blank/null counts:
+order_id               0
+customer_id            0
+product_id             0
+quantity               0
+order_ts               0
+status                 0
+discount_pct           0
+order_amount           0
+delivery_minutes    1199
+dtype: int64
+
+=== tickets AFTER clean: shape=(164, 5) ===
+Data types:
+ticket_id        str
+customer_id      str
+order_id         str
+text             str
+true_category    str
+dtype: object
+Blank/null counts:
+ticket_id        0
+customer_id      0
+order_id         8
+text             4
+true_category    0
+dtype: int64
+
+CLEANING RULES
+customers/orders: rows with a blank customer_id / order_id / product_id are dropped (cannot be joined).
+customers: city -> strip + lowercase, mapped to 6 canonical cities; gender (male/M/FEMALE/f/blank...) -> Male / Female / Unknown;
+  age blank or outside 10-100 (outlier, e.g. -4, 0, 150, 999) -> NaN, then filled with the median age of the customer's city.
+orders: exact duplicate rows dropped; if an order_id appears more than once (pending copy + final row) keep the LATEST order_ts;
+  order_amount 'N/A'/'error' -> imputed as product price * quantity * (1 - discount_pct/100);
+  negative delivery_minutes -> NaN; blank/NaN delivery of COMPLETED orders -> median delivery of that product category;
+  delivery_minutes of cancelled orders stays empty (never delivered).
+tickets: text stripped; empty/whitespace and over-long tickets are kept here and blocked later by the Part C guardrails.

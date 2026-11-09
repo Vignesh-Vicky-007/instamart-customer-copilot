@@ -1,0 +1,36 @@
+EXAMPLE TICKET: My order is delayed. I placed it 2 hours ago, but it has not arrived.
+
+--- ZERO-SHOT PROMPT ---
+You are a support triage assistant for a quick-commerce app.
+Classify the ticket into exactly one of: Refund Request, Payment Issue, Delivery Delay, Product Quality, Fraud Report, App Crash.
+Reply with the label only.
+
+Ticket: My order is delayed. I placed it 2 hours ago, but it has not arrived.
+Label:
+
+--- FEW-SHOT PROMPT ---
+You are a support triage assistant for a quick-commerce app.
+Classify each ticket into one of: Refund Request, Payment Issue, Delivery Delay, Product Quality, Fraud Report, App Crash. Reply with the label only.
+
+Ticket: I want my money back for the items I returned.
+Label: Refund Request
+Ticket: I was charged twice for my order, please return the extra money.
+Label: Payment Issue
+Ticket: My order is very late and the rider is not answering.
+Label: Delivery Delay
+Ticket: The milk packet I received was leaking and the eggs were broken.
+Label: Product Quality
+Ticket: Someone used my wallet without my permission, this is fraud.
+Label: Fraud Report
+Ticket: The app freezes on the payment page and I cannot log in.
+Label: App Crash
+
+Ticket: My order is delayed. I placed it 2 hours ago, but it has not arrived.
+Label:
+
+--- CLASSIFICATION (JSON) ---
+{
+  "category": "Delivery Delay",
+  "priority": "Medium",
+  "action": "Check delivery status"
+}

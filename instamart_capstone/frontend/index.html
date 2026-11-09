@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instamart Support Co-Pilot</title>
+
+  <script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
+
+  <style>
+    * { box-sizing: border-box; }
+
+    :root {
+      --navy: #0a1f44;
+      --navy-2: #12305f;
+      --paper: #eef1f6;
+      --white: #ffffff;
+      --ink: #0a1f44;
+      --muted: #5b6b86;
+      --line: #cfd7e4;
+      --alert: #b42318;
+    }
+
+    html, body, #root { height: 100%; }
+    body {
+      margin: 0;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--paper);
+      color: var(--ink);
+    }
+    button, input { font: inherit; }
+
+    .app { height: 100%; display: flex; flex-direction: column; }
+
+    /* Header */
+    .topbar {
+      background: var(--navy);
+      color: var(--white);
+      padding: 0 28px;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-shrink: 0;
+    }
+    .topbar h1 { margin: 0; font-size: 15px; font-weight: 700; letter-spacing: .3px; }
+    .status { font-size: 12px; color: #b9c7e0; display: flex; align-items: center; gap: 8px; }
+    .dot { width: 8px; height: 8px; background: #3ddc97; }
+    .dot.off { background: #f4a261; }
+
+    /* Chat */
+    .chat { flex: 1; min-height: 0; display: flex; flex-direction: column; width: 100%; max-width: 880px; margin: 0 auto; }
+    #log { flex: 1; overflow-y: auto; padding: 28px 24px 8px; }
+
+    .row { display: flex; margin: 14px 0; }
+    .row.user { justify-content: flex-end; }
+
+    .bubble {
+      max-width: 78%;
+      padding: 12px 16px;
+      font-size: 14px;
+      line-height: 1.6;
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+    }
+    .user .bubble { background: var(--navy); color: var(--white); }
+    .bot .bubble {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-left: 3px solid var(--navy);
+    }
+    .blocked .bubble { border-left-color: var(--alert); }
+
+    .meta { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 6px; }
+    .tag {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: .4px;
+      text-transform: uppercase;
+      padding: 3px 8px;
+      background: var(--paper);
+      color: var(--navy-2);
+      border: 1px solid var(--line);
+    }
+    .tag.high { background: #fdecea; color: var(--alert); border-color: #f3c3be; }
+    .escalated {
+      margin-top: 10px;
+      padding: 8px 10px;
+      font-size: 12px;
+      font-weight: 600;
+      background: var(--navy);
+      color: var(--white);
+    }
+
+    /* Suggestions */
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; padding: 0 24px 12px; }
+    .chip {
+      background: var(--white);
+      border: 1px solid var(--navy);
+      color: var(--navy);
+      padding: 8px 14px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .chip:hover { background: var(--navy); color: var(--white); }
+
+    /* Input */
+    form { display: flex; padding: 12px 24px 24px; }
+    input {
+      flex: 1;
+      min-width: 0;
+      padding: 14px 16px;
+      font-size: 14px;
+      border: 1px solid var(--navy);
+      border-right: none;
+      background: var(--white);
+      color: var(--ink);
+      outline: none;
+    }
+    input:focus { box-shadow: inset 0 0 0 1px var(--navy); }
+    button.send {
+      background: var(--navy);
+      color: var(--white);
+      border: 1px solid var(--navy);
+      padding: 0 26px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    button.send:hover:not(:disabled) { background: var(--navy-2); }
+    button:disabled { opacity: .5; cursor: not-allowed; }
+
+    @media (max-width: 600px) {
+      .topbar { padding: 0 16px; }
+      #log { padding: 20px 14px 8px; }
+      .chips { padding: 0 14px 10px; }
+      form { padding: 10px 14px 16px; }
+      .bubble { max-width: 90%; }
+    }
+  </style>
+</head>
+
+<body>
+<div id="root"></div>
+
+<script type="text/babel">
+const { useState, useRef, useEffect } = React;
+
+// Works when served by server.py (port 8000) AND when the page is opened from VS Code Live Server / file://
+const API = window.location.port === "8000" ? "" : "http://localhost:8000";
+
+const HELLO = {
+  from: "bot",
+  text: "Hello, I'm the Instamart support assistant. Ask about refunds, delivery or payments, or describe a problem with an order."
+};
+
+const SUGGESTIONS = [
+  "I want to request a refund",
+  "My order is delayed",
+  "I have a payment issue",
+];
+
+function Bot({ m }) {
+  const d = m.data;
+  return (
+    <div className={"row bot" + (d && d.blocked ? " blocked" : "")}>
+      <div className="bubble">
+        {m.text}
+
+        {d && !d.blocked && (d.category || d.priority || (d.sources && d.sources.length > 0)) && (
+          <div className="meta">
+            {d.category && <span className="tag">{d.category}</span>}
+            {d.priority && (
+              <span className={"tag" + (d.priority === "High" ? " high" : "")}>{d.priority} priority</span>
+            )}
+            {d.sources && d.sources.length > 0 && (
+              <span className="tag">Source: {d.sources.join(", ")}</span>
+            )}
+          </div>
+        )}
+
+        {d && d.escalated && (
+          <div className="escalated">Escalated to a human agent · Case {d.case_id}</div>
+        )}
+      </div>
+    </div>
+  );
+}
+
+function App() {
+  const [msgs, setMsgs] = useState([HELLO]);
+  const [text, setText] = useState("");
+  const [busy, setBusy] = useState(false);
+  const [online, setOnline] = useState(true);
+  const end = useRef(null);
+
+  useEffect(() => {
+    if (end.current) end.current.scrollIntoView({ behavior: "smooth" });
+  }, [msgs, busy]);
+
+  async function send(raw) {
+    const message = (raw || "").trim();
+    if (!message || busy) return;
+
+    setMsgs((m) => [...m, { from: "user", text: message }]);
+    setText("");
+    setBusy(true);
+
+    try {
+      const res = await fetch(API + "/api/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message }),
+      });
+      if (!res.ok) throw new Error("Server error " + res.status);
+      const data = await res.json();
+      setOnline(true);
+      setMsgs((m) => [...m, { from: "bot", text: data.reply || "No response from the server.", data }]);
+    } catch (err) {
+      setOnline(false);
+      setMsgs((m) => [...m, { from: "bot", text: "Cannot reach the support server. Start it with:  python server.py" }]);
+    } finally {
+      setBusy(false);
+    }
+  }
+
+  const onlyGreeting = msgs.length === 1;
+
+  return (
+    <div className="app">
+      <header className="topbar">
+        <h1>Instamart Support Co-Pilot</h1>
+        <div className="status">
+          <span className={"dot" + (online ? "" : " off")}></span>
+          {online ? "Assistant ready" : "Server offline"}
+        </div>
+      </header>
+
+      <div className="chat">
+        <div id="log" aria-live="polite">
+          {msgs.map((m, i) =>
+            m.from === "user" ? (
+              <div key={i} className="row user"><div className="bubble">{m.text}</div></div>
+            ) : (
+              <Bot key={i} m={m} />
+            )
+          )}
+          {busy && <div className="row bot"><div className="bubble">Thinking…</div></div>}
+          <div ref={end}></div>
+        </div>
+
+        {onlyGreeting && (
+          <div className="chips">
+            {SUGGESTIONS.map((s) => (
+              <button key={s} className="chip" type="button" onClick={() => send(s)}>{s}</button>
+            ))}
+          </div>
+        )}
+
+        <form onSubmit={(e) => { e.preventDefault(); send(text); }}>
+          <input
+            value={text}
+            onChange={(e) => setText(e.target.value)}
+            placeholder="Type your message…"
+            aria-label="Your message"
+            disabled={busy}
+            autoFocus
+          />
+          <button className="send" type="submit" disabled={busy || !text.trim()}>Send</button>
+        </form>
+      </div>
+    </div>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+</script>
+</body>
+</html>
